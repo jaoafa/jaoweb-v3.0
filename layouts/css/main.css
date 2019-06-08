@@ -444,22 +444,8 @@
  * Main
  * ---------------------- */
 #hero-section {
-  margin-bottom: 7px;
   position: relative;
-}
-
-#hero-section::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  display: block;
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(#e6fe8f), color-stop(50%, #ffb41e), to(#c82e45));
-  background-image: -webkit-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
-  background-image: -o-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
-  background-image: linear-gradient(to left, #e6fe8f, #ffb41e 50%, #c82e45);
+  border-bottom: solid 1px #eee;
 }
 
 #hero-section #hero-section-inner {
