@@ -378,3 +378,83 @@ main {
         }
     }
 }
+
+/* -^------------------^-
+ * Intro Section
+ * ---------------------- */
+#intro-section {
+    color: #666;
+    background: #fff;
+}
+#intro-section-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    @include bp( md ) {
+        padding: 104px 24px;
+    }
+    @include bp( lg ) {
+        padding: 120px 24px;
+    }
+}
+#intro-section-text {
+
+    @include bp( md ) {
+        width: 50%;
+        max-width: 496px;
+        margin: 0 4% 0 auto;
+    }
+
+    h3 {
+        margin: 0;
+        position: relative;
+        z-index: 50;
+
+        font-family: sofia-pro, sans-serif;
+        font-style: normal;
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+
+        @include bp( md ) {
+            margin-bottom: 40px;
+            padding: 0 32px;
+            box-sizing: border-box;
+        }
+        @include bp( lg ) {
+            padding: 0 56px;
+        }
+    }
+
+    p {
+        margin: 0 16px 16px 16px;
+        position: relative;
+        z-index: 50;
+
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 1.2pt;
+    }
+
+    img {
+        width: 200px;
+        margin: 32px auto;
+        display: block;
+
+        @include bp( md ) {
+            width: 50%;
+            margin: auto auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 4%;
+            z-index: 0;
+        }
+    }
+}
+
