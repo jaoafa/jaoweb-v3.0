@@ -504,3 +504,135 @@ main {
     z-index: 0;
   }
 }
+
+/* -^------------------^-
+ * Connect Section
+ * ---------------------- */
+#connect-section {
+  color: #fff;
+  background: #ffb41e;
+}
+
+#connect-section-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section-inner {
+    padding: 104px 24px;
+  }
+}
+
+#connect-section-text h3 {
+  margin: 0 0 40px;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  #connect-section-text h3 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section-text h3 {
+    margin-bottom: 56px;
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #connect-section-text h3 {
+    font-size: 72px;
+  }
+}
+
+#connect-section-flexbox {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section-flexbox {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+#connect-section-flexbox .connect-section-link {
+  width: 100%;
+  margin: 0 8px;
+  padding: 24px 32px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #777;
+  background: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  border: solid 8px #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+@media screen and (min-width: 576px) {
+  #connect-section-flexbox .connect-section-link {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section-flexbox .connect-section-link {
+    width: 45%;
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
+
+#connect-section-flexbox .connect-section-link ~ .connect-section-link {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section-flexbox .connect-section-link ~ .connect-section-link {
+    margin-top: 0;
+  }
+}
+
+#connect-section-flexbox .connect-section-link:hover {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+#connect-section-flexbox .connect-section-link i {
+  margin-bottom: 24px;
+  display: block;
+  font-size: 56px;
+  text-align: center;
+}
