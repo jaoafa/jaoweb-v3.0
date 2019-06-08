@@ -5,7 +5,6 @@
 /* -^------------------^-
  * Toggle Navigation
  * ---------------------- */
-// Global Navigation
 var hamburger = document.getElementById( 'header-navigation-toggle' );
 var hamburgerBars = hamburger.querySelector( 'span' );
 var headerNavigation = document.getElementById( 'header-navigation' );
@@ -21,5 +20,24 @@ for( let index = 0; index < headerNavigationList.length; index++ ) {
         }
     });
 }
+
+/* -^------------------^-
+ * Toggle Header
+ * ---------------------- */
+var header = document.getElementById( 'header' );
+var headerNavigation = document.getElementById( 'header-navigation' );
+window.addEventListener( 'scroll', function() {
+    let scrollValue = document.scrollingElement.scrollTop;
+    if( header !== null ) {
+        if( scrollValue > 0 ) {
+            header.classList.add( 'toggle-header-background' );
+            headerNavigation.classList.add( 'toggle-header-background' );
+        }
+        else {
+            header.classList.remove( 'toggle-header-background' );
+            headerNavigation.classList.remove( 'toggle-header-background' );
+        }
+    }
+});
 
 })();

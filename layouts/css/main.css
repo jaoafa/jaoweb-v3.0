@@ -9,12 +9,19 @@
  * ---------------------- */
 #header {
   width: 100%;
-  height: 54px;
+  height: 50px;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  background: transparent;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+#header.toggle-header-background {
   background: #fff;
 }
 
@@ -26,10 +33,10 @@
   position: absolute;
   top: 47px;
   left: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(#e19600), color-stop(50%, #ffb41e), to(#ffd23c));
-  background-image: -webkit-linear-gradient(right, #e19600, #ffb41e 50%, #ffd23c);
-  background-image: -o-linear-gradient(right, #e19600, #ffb41e 50%, #ffd23c);
-  background-image: linear-gradient(to left, #e19600, #ffb41e 50%, #ffd23c);
+  background-image: -webkit-gradient(linear, right top, left top, from(#e6fe8f), color-stop(50%, #ffb41e), to(#c82e45));
+  background-image: -webkit-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
+  background-image: -o-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
+  background-image: linear-gradient(to left, #e6fe8f, #ffb41e 50%, #c82e45);
 }
 
 #header nav {
@@ -45,7 +52,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  background: #fff;
+  background: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,11 +72,11 @@
   color: #444;
   background: #fff;
   font-size: 13px;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: color, -webkit-transform;
+  transition-property: color, -webkit-transform;
+  -o-transition-property: transform, color;
+  transition-property: transform, color;
+  transition-property: transform, color, -webkit-transform;
   -webkit-transition-duration: .2s;
   -o-transition-duration: .2s;
   transition-duration: .2s;
@@ -80,6 +87,9 @@
     position: relative;
     left: 0;
     z-index: 200;
+    color: #fff;
+    background: transparent;
+    text-shadow: 0 0 3px #444;
     font-size: 12px;
   }
 }
@@ -95,6 +105,13 @@
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header-navigation.toggle-header-background {
+    color: #444;
+    text-shadow: none;
   }
 }
 
@@ -147,6 +164,12 @@
 
 #header-navigation > ul > li:hover {
   background: #f5f5f5;
+}
+
+@media screen and (min-width: 768px) {
+  #header-navigation > ul > li:hover {
+    background: rgba(170, 170, 170, 0.4);
+  }
 }
 
 #header-navigation > ul > li > span, #header-navigation > ul > li > a {
@@ -242,7 +265,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #555;
+  background: #fff;
+  -webkit-box-shadow: 0 0 3px #aaa;
+  box-shadow: 0 0 3px #aaa;
   -webkit-transition-duration: .2s;
   -o-transition-duration: .2s;
   transition-duration: .2s;
@@ -258,7 +283,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #555;
+  background: #fff;
+  -webkit-box-shadow: 0 0 3px #aaa;
+  box-shadow: 0 0 3px #aaa;
   -webkit-transition-duration: .2s;
   -o-transition-duration: .2s;
   transition-duration: .2s;
@@ -278,15 +305,23 @@
 
 #header-navigation-toggle span.toggle-navigation-view {
   background: transparent;
+  -webkit-box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 3px transparent;
 }
 
 #header-navigation-toggle span.toggle-navigation-view::before {
+  background: #555;
+  -webkit-box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 3px transparent;
   -webkit-transform: translateY(0) rotateZ(45deg);
   -ms-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotateZ(45deg);
 }
 
 #header-navigation-toggle span.toggle-navigation-view::after {
+  background: #555;
+  -webkit-box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 3px transparent;
   -webkit-transform: translateY(0) rotateZ(-45deg);
   -ms-transform: translateY(0) rotate(-45deg);
   transform: translateY(0) rotateZ(-45deg);
@@ -408,10 +443,6 @@
 /* -^------------------^-
  * Main
  * ---------------------- */
-main {
-  margin-top: 54px;
-}
-
 #hero-section {
   margin-bottom: 7px;
   position: relative;
@@ -420,15 +451,15 @@ main {
 #hero-section::after {
   content: "";
   width: 100%;
-  height: 3px;
+  height: 4px;
   display: block;
   position: absolute;
-  bottom: -7px;
+  bottom: -8px;
   left: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(#e19600), color-stop(50%, #ffb41e), to(#ffd23c));
-  background-image: -webkit-linear-gradient(right, #e19600, #ffb41e 50%, #ffd23c);
-  background-image: -o-linear-gradient(right, #e19600, #ffb41e 50%, #ffd23c);
-  background-image: linear-gradient(to left, #e19600, #ffb41e 50%, #ffd23c);
+  background-image: -webkit-gradient(linear, right top, left top, from(#e6fe8f), color-stop(50%, #ffb41e), to(#c82e45));
+  background-image: -webkit-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
+  background-image: -o-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
+  background-image: linear-gradient(to left, #e6fe8f, #ffb41e 50%, #c82e45);
 }
 
 #hero-section #hero-section-inner {
@@ -436,7 +467,7 @@ main {
   max-width: 1200px;
   height: 100%;
   margin: auto;
-  padding: 0 16px;
+  padding: 24px 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +490,7 @@ main {
 
 @media screen and (min-width: 768px) {
   #hero-section #hero-section-inner {
-    padding: 0 24px;
+    padding: 40px 24px 0;
   }
 }
 
@@ -501,6 +532,7 @@ main {
   height: auto;
   min-height: 184px;
   max-height: 400px;
+  padding-top: 54px;
   position: relative;
 }
 
