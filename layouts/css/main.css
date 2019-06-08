@@ -293,6 +293,119 @@
 }
 
 /* -^------------------^-
+ * Footer
+ * ---------------------- */
+#footer {
+  width: 100%;
+  padding: 80px 0 240px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background: #33302b;
+}
+
+#footer #footer-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #footer-wrap {
+    padding: 0 24px;
+  }
+}
+
+#footer #footer-wrap a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#footer #social-links {
+  width: 200px;
+  height: 32px;
+  margin: 0 auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #social-links {
+    margin-right: 0;
+  }
+}
+
+#footer #social-links ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#footer #social-links ul li {
+  width: 32px;
+  height: 32px;
+  color: #33302b;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 50%;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+#footer #social-links ul li:hover {
+  color: #fff;
+}
+
+#footer #social-links ul li[data-social="twitter"]:hover {
+  background: #1da1f2;
+}
+
+#footer #social-links ul li[data-social="discord"]:hover {
+  background: #7289da;
+}
+
+#footer #social-links ul li[data-social="github"]:hover {
+  background: #24292e;
+}
+
+#footer #social-links ul li[data-social="instagram"]:hover {
+  background: #e4405f;
+}
+
+#footer #social-links ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#footer #copyright {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #copyright {
+    text-align: right;
+  }
+}
+
+#footer #copyright small {
+  font-size: 12px;
+}
+
+/* -^------------------^-
  * Main
  * ---------------------- */
 main {
