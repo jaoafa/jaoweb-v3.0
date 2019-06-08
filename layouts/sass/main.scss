@@ -32,7 +32,7 @@ $breakPoints: (
  * ---------------------- */
  #header {
     width: 100%;
-    height: 56px;
+    height: 54px;
     display: block;
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ $breakPoints: (
     &::after {
         content: "";
         width: 100%;
-        height: 2px;
+        height: 3px;
         display: block;
         position: absolute;
         top: 47px;
@@ -60,7 +60,7 @@ $breakPoints: (
     
     nav {
         width: 100%;
-        max-width: 1200px;
+        max-width: $widthMax;
         height: 48px;
         margin: 0 auto;
         padding: 4px 16px;
@@ -267,6 +267,114 @@ $breakPoints: (
             &::after {
                 transform: translateY( 0 ) rotateZ( -45deg );
             }
+        }
+    }
+}
+
+/* -^------------------^-
+ * Main
+ * ---------------------- */
+main {
+    margin-top: 54px;
+}
+#hero-section {
+    margin-bottom: 7px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+
+        background-image: linear-gradient(
+            to left, 
+            $colorMain - 30, 
+            $colorMain 50%, 
+            $colorMain + 30 
+        );
+    }
+
+    #hero-section-inner {
+        width: 100%;
+        max-width: $widthMax;
+        height: 100%;
+        margin: auto;
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        @include bp( md ) {
+            padding: 0 24px;
+        }
+
+        svg {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+
+            fill: #fff;
+            filter: drop-shadow( 0 0 4px #888 );
+        }
+        p {
+            width: 100%;
+            margin: -24px 0 24px;
+            padding: 0;
+
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            text-shadow: 0 0 4px #333;
+
+            @include bp( sm ) {
+                margin: -8px 0 8px;
+                
+                font-size: 13px;
+            }
+            @include bp( md ) {
+                margin: 16px 0 0;
+
+                font-size: 15px;
+            }
+        }
+    }
+    #hero-section-img {
+        width: 100%;
+        height: auto;
+        min-height: 184px;
+        max-height: 400px;
+        position: relative;
+
+        &::before {
+                content: "";
+                width: 100%;
+                padding-top: 32%;
+                display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -100;
+            object-fit: cover;
         }
     }
 }
