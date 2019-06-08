@@ -3,4 +3,4 @@
 進捗ダメです。
 
 - トップページ
-  - https://hiratake.github.io/jaoweb/layouts/html/index.html
+  - https://jaoafa.github.io/jaoweb/layouts/html/index.html
