@@ -400,25 +400,9 @@ $breakPoints: (
  * Main
  * ---------------------- */
 #hero-section {
-    margin-bottom: 7px;
     position: relative;
 
-    &::after {
-        content: "";
-        width: 100%;
-        height: 4px;
-        display: block;
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-
-        background-image: linear-gradient(
-            to left, 
-            #e6fe8f, 
-            $colorMain 50%, 
-            #c82e45 
-        );
-    }
+    border-bottom: solid 1px #eee;
 
     #hero-section-inner {
         width: 100%;
