@@ -26,16 +26,19 @@ for( let index = 0; index < headerNavigationList.length; index++ ) {
  * ---------------------- */
 var header = document.getElementById( 'header' );
 var headerNavigation = document.getElementById( 'header-navigation' );
+var headerToggleButton = document.getElementById( 'header-navigation-toggle' );
 window.addEventListener( 'scroll', function() {
     let scrollValue = document.scrollingElement.scrollTop;
     if( header !== null ) {
         if( scrollValue > 0 ) {
             header.classList.add( 'toggle-header-background' );
             headerNavigation.classList.add( 'toggle-header-background' );
+            headerToggleButton.classList.add( 'toggle-header-background' );
         }
         else {
             header.classList.remove( 'toggle-header-background' );
             headerNavigation.classList.remove( 'toggle-header-background' );
+            headerToggleButton.classList.remove( 'toggle-header-background' );
         }
     }
 });

@@ -240,6 +240,19 @@ $breakPoints: (
         display: none;
     }
 
+    &.toggle-header-background {
+
+        span {
+            background: #555;
+            box-shadow: 0 0 3px transparent;
+
+            &::before, &::after {
+                background: #555;
+                box-shadow: 0 0 3px transparent;
+            }
+        }
+    }
+
     span {
         width: 100%;
         height: 2px;

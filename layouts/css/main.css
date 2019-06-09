@@ -255,6 +255,18 @@
   }
 }
 
+#header-navigation-toggle.toggle-header-background span {
+  background: #555;
+  -webkit-box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 3px transparent;
+}
+
+#header-navigation-toggle.toggle-header-background span::before, #header-navigation-toggle.toggle-header-background span::after {
+  background: #555;
+  -webkit-box-shadow: 0 0 3px transparent;
+  box-shadow: 0 0 3px transparent;
+}
+
 #header-navigation-toggle span {
   width: 100%;
   height: 2px;
