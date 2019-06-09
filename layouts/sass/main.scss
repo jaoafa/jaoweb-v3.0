@@ -412,6 +412,19 @@ $breakPoints: (
 /* -^------------------^-
  * Main
  * ---------------------- */
+.section-inner {
+    width: 100%;
+    max-width: $widthMax;
+    margin: 0 auto;
+    padding: 72px 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    @include bp( md ) {
+        padding: 104px 24px;
+    }
+}
 // HERO SECTION
 #hero-section {
     position: relative;
@@ -419,8 +432,6 @@ $breakPoints: (
     border-bottom: solid 1px #eee;
 
     #hero-section-inner {
-        width: 100%;
-        max-width: $widthMax;
         height: 100%;
         margin: auto;
         padding: 24px 16px 0;
@@ -428,7 +439,6 @@ $breakPoints: (
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        box-sizing: border-box;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -506,17 +516,7 @@ $breakPoints: (
     background: #fff;
 }
 #intro-section-inner {
-    width: 100%;
-    max-width: $widthMax;
-    margin: 0 auto;
-    padding: 72px 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
 
-    @include bp( md ) {
-        padding: 104px 24px;
-    }
     @include bp( lg ) {
         padding: 120px 24px;
     }
@@ -585,14 +585,6 @@ $breakPoints: (
     background: #f0f0f0;
 }
 #feature-section-inner {
-    width: 100%;
-    max-width: $widthMax;
-    margin: 0 auto;
-    padding: 72px 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-
     text-align: center;
 
     @include bp( md ) {
@@ -683,19 +675,6 @@ $breakPoints: (
 #connect-section {
     color: #fff;
     background: $colorMain;
-}
-#connect-section-inner {
-    width: 100%;
-    max-width: $widthMax;
-    margin: 0 auto;
-    padding: 72px 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-
-    @include bp( md ) {
-        padding: 104px 24px;
-    }
 }
 #connect-section-text {
     h3 {
