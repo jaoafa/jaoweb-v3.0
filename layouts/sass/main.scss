@@ -524,7 +524,7 @@ $breakPoints: (
 
         font-family: sofia-pro, sans-serif;
         font-style: normal;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 900;
         text-align: center;
 
@@ -532,6 +532,8 @@ $breakPoints: (
             margin-bottom: 40px;
             padding: 0 32px;
             box-sizing: border-box;
+
+            font-size: 32px;
         }
         @include bp( lg ) {
             padding: 0 56px;
