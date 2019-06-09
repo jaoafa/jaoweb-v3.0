@@ -325,7 +325,7 @@ $breakPoints: (
 
     #footer-wrap {
         width: 100%;
-        max-width: 1200px;
+        max-width: $widthMax;
         margin: 0 auto;
         padding: 0 16px;
         box-sizing: border-box;
@@ -412,6 +412,7 @@ $breakPoints: (
 /* -^------------------^-
  * Main
  * ---------------------- */
+// HERO SECTION
 #hero-section {
     position: relative;
 
@@ -499,16 +500,14 @@ $breakPoints: (
     }
 }
 
-/* -^------------------^-
- * Intro Section
- * ---------------------- */
+// INTRO SECTION
 #intro-section {
     color: #666;
     background: #fff;
 }
 #intro-section-inner {
     width: 100%;
-    max-width: 1200px;
+    max-width: $widthMax;
     margin: 0 auto;
     padding: 72px 16px;
     box-sizing: border-box;
@@ -580,16 +579,114 @@ $breakPoints: (
     }
 }
 
-/* -^------------------^-
- * Connect Section
- * ---------------------- */
+// FEATURE SECTION
+#feature-section {
+    color: #555;
+    background: #f0f0f0;
+}
+#feature-section-inner {
+    width: 100%;
+    max-width: $widthMax;
+    margin: 0 auto;
+    padding: 56px 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    text-align: center;
+
+    @include bp( md ) {
+        padding: 104px 104px;
+
+        text-align: left;
+    }
+
+    h3 {
+        margin: 0 0 48px;
+        position: relative;
+
+        font-weight: normal;
+        font-size: 28px;
+
+        @include bp( md ) {
+            font-size: 36px;
+        }
+
+        &::before {
+            content: "";
+            width: 72%;
+            height: 1px;
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            background: #bbb;
+
+            @include bp( md ) {
+                width: 40%;
+                display: block;
+            }
+        }
+    }
+    #feature-section-container {
+        width: 100%;
+        display: block;
+
+        @include bp( md ) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            color: #5a5a5a;
+
+            @include bp( md ) {
+                width: 30%;
+                margin: 0;
+            }
+
+            &:hover i {
+                transform: rotate( 360deg );
+                transition-duration: .4s;
+            }
+            ~ section {
+                margin-top: 56px;
+
+                @include bp( md ) {
+                    margin-top: 0;
+                }
+            }
+
+            i {
+                font-size: 72px;
+            }
+            h4 {
+                margin: 32px 0 16px;
+
+                font-weight: normal;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            p {
+                color: #777;
+            }
+        }
+    }
+}
+
+// CONNECT SECTION
 #connect-section {
     color: #fff;
     background: $colorMain;
 }
 #connect-section-inner {
     width: 100%;
-    max-width: 1200px;
+    max-width: $widthMax;
     margin: 0 auto;
     padding: 72px 16px;
     box-sizing: border-box;
