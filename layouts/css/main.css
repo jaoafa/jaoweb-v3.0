@@ -344,6 +344,20 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-decoration: none;
+}
+
+#header-loginuser.toggle-header-background .header-loginuser-icon {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#header-loginuser.toggle-header-background .header-loginuser-username {
+  color: #444;
+}
+
+#header-loginuser.toggle-header-background .header-loginuser-username span {
+  text-shadow: none;
 }
 
 #header-loginuser .header-loginuser-icon {

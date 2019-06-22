@@ -314,6 +314,22 @@ $breakPoints: (
     display: flex;
     justify-content: space-between;
 
+    text-decoration: none;
+
+    &.toggle-header-background {
+
+        .header-loginuser-icon {
+            box-shadow: none;
+        }
+        .header-loginuser-username {
+            color: #444;
+
+            span {
+                text-shadow: none;
+            }
+        }
+    }
+
     .header-loginuser-icon {
         width: 32px;
         height: 32px;
