@@ -1,12 +1,256 @@
-/* -- * -- * -- * -- * -- *
- * =^==================^= *
- *  (c) 2019 jao Server   *
- *   https://jaoafa.com   *
- * ====================== *
- * -- * -- * -- * -- * -- */
-/* -^------------------^-
- * Header
- * ---------------------- */
+/* -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- *
+ *      =====================^==================^=====================      *
+ *                           (c) 2019 jao Server                            *
+ *                            https://jaoafa.com                            *
+ *      ==============================================================      *
+ * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, ::before, ::after {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::before, ::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+hr {
+  overflow: visible;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+main, menu, nav, section, summary {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+small {
+  font-size: 80%;
+}
+
+[hidden], template {
+  display: none;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+input {
+  border-radius: 0;
+}
+
+button, [type="button"], [type="reset"], [type="submit"], [role="button"] {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[type="number"] {
+  width: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+button {
+  overflow: visible;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: 0;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  outline: 1px dotted ButtonText;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+img {
+  border-style: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+@media screen {
+  [hidden~="screen"] {
+    display: inherit;
+  }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+  }
+}
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
 #header {
   width: 100%;
   height: 50px;
@@ -392,122 +636,6 @@
   text-shadow: 0 0 3px #444;
 }
 
-/* -^------------------^-
- * Footer
- * ---------------------- */
-#footer {
-  width: 100%;
-  padding: 80px 0 240px 0;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  background: #33302b;
-}
-
-#footer #footer-wrap {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 768px) {
-  #footer #footer-wrap {
-    padding: 0 24px;
-  }
-}
-
-#footer #footer-wrap a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#footer #social-links {
-  width: 200px;
-  height: 32px;
-  margin: 0 auto 32px;
-}
-
-@media screen and (min-width: 768px) {
-  #footer #social-links {
-    margin-right: 0;
-  }
-}
-
-#footer #social-links ul {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  list-style: none;
-}
-
-#footer #social-links ul li {
-  width: 32px;
-  height: 32px;
-  color: #33302b;
-  background: #fff;
-  font-size: 16px;
-  text-align: center;
-  line-height: 34px;
-  border-radius: 50%;
-  -webkit-transition-duration: .2s;
-  -o-transition-duration: .2s;
-  transition-duration: .2s;
-}
-
-#footer #social-links ul li:hover {
-  color: #fff;
-}
-
-#footer #social-links ul li[data-social="twitter"]:hover {
-  background: #1da1f2;
-}
-
-#footer #social-links ul li[data-social="discord"]:hover {
-  background: #7289da;
-}
-
-#footer #social-links ul li[data-social="github"]:hover {
-  background: #24292e;
-}
-
-#footer #social-links ul li[data-social="instagram"]:hover {
-  background: #e4405f;
-}
-
-#footer #social-links ul li a {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-#footer #copyright {
-  color: #fff;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  #footer #copyright {
-    text-align: right;
-  }
-}
-
-#footer #copyright small {
-  font-size: 12px;
-}
-
-/* -^------------------^-
- * Main
- * ---------------------- */
 .section-inner {
   width: 100%;
   max-width: 1200px;
@@ -1003,4 +1131,114 @@
   display: block;
   font-size: 56px;
   text-align: center;
+}
+
+#footer {
+  width: 100%;
+  padding: 80px 0 240px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background: #33302b;
+}
+
+#footer #footer-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #footer-wrap {
+    padding: 0 24px;
+  }
+}
+
+#footer #footer-wrap a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#footer #social-links {
+  width: 200px;
+  height: 32px;
+  margin: 0 auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #social-links {
+    margin-right: 0;
+  }
+}
+
+#footer #social-links ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#footer #social-links ul li {
+  width: 32px;
+  height: 32px;
+  color: #33302b;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 50%;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+#footer #social-links ul li:hover {
+  color: #fff;
+}
+
+#footer #social-links ul li[data-social="twitter"]:hover {
+  background: #1da1f2;
+}
+
+#footer #social-links ul li[data-social="discord"]:hover {
+  background: #7289da;
+}
+
+#footer #social-links ul li[data-social="github"]:hover {
+  background: #24292e;
+}
+
+#footer #social-links ul li[data-social="instagram"]:hover {
+  background: #e4405f;
+}
+
+#footer #social-links ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#footer #copyright {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #footer #copyright {
+    text-align: right;
+  }
+}
+
+#footer #copyright small {
+  font-size: 12px;
 }

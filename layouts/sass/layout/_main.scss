@@ -1,0 +1,423 @@
+//
+// Layout > Main
+// -----------------------------------------------------------------
+
+.section-inner {
+    width: 100%;
+    max-width: $widthMax;
+    margin: 0 auto;
+    padding: 72px 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    @include bp( md ) {
+        padding: 104px 24px;
+    }
+}
+.top-common-h3 {
+    margin: 0 0 48px;
+    position: relative;
+
+    font-weight: normal;
+    font-size: 28px;
+
+    @include bp( md ) {
+        font-size: 36px;
+    }
+
+    &::before {
+        content: "";
+        width: 72%;
+        height: 1px;
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        background: #bbb;
+
+        @include bp( md ) {
+            width: 40%;
+            display: block;
+        }
+    }
+}
+
+// HERO SECTION
+#hero-section {
+    position: relative;
+
+    border-bottom: solid 1px #eee;
+
+    #hero-section-inner {
+        height: 100%;
+        margin: auto;
+        padding: 24px 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        @include bp( md ) {
+            padding: 40px 24px 0;
+        }
+
+        svg {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+
+            fill: #fff;
+            filter: drop-shadow( 0 0 4px #888 );
+        }
+        p {
+            width: 100%;
+            margin: -24px 0 24px;
+            padding: 0;
+
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            text-shadow: 0 0 4px #333;
+
+            @include bp( sm ) {
+                margin: -8px 0 8px;
+                
+                font-size: 13px;
+            }
+            @include bp( md ) {
+                margin: 16px 0 0;
+
+                font-size: 15px;
+            }
+        }
+    }
+    #hero-section-img {
+        width: 100%;
+        height: auto;
+        min-height: 184px;
+        max-height: 400px;
+        padding-top: 54px;
+        position: relative;
+
+        &::before {
+                content: "";
+                width: 100%;
+                padding-top: 32%;
+                display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -100;
+            object-fit: cover;
+        }
+    }
+}
+
+// INTRO SECTION
+#intro-section {
+    color: #666;
+    background: #fff;
+}
+#intro-section-inner {
+
+    @include bp( lg ) {
+        padding: 120px 24px;
+    }
+}
+#intro-section-text {
+
+    @include bp( md ) {
+        width: 50%;
+        max-width: 496px;
+        margin: 0 4% 0 auto;
+    }
+
+    h3 {
+        margin: 0;
+        position: relative;
+        z-index: 50;
+
+        font-family: sofia-pro, sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 900;
+        text-align: center;
+
+        @include bp( md ) {
+            margin-bottom: 40px;
+            padding: 0 32px;
+            box-sizing: border-box;
+
+            font-size: 32px;
+        }
+        @include bp( lg ) {
+            padding: 0 56px;
+        }
+    }
+
+    p {
+        margin: 0 16px 16px 16px;
+        position: relative;
+        z-index: 50;
+
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 1.2pt;
+    }
+
+    img {
+        width: 200px;
+        margin: 32px auto;
+        display: block;
+
+        @include bp( md ) {
+            width: 50%;
+            margin: auto auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 4%;
+            z-index: 0;
+        }
+    }
+}
+
+// FEATURE SECTION
+#feature-section {
+    color: #555;
+    background: #f0f0f0;
+}
+#feature-section-inner {
+    text-align: center;
+
+    @include bp( md ) {
+        padding: 104px 104px;
+
+        text-align: left;
+    }
+
+    #feature-section-container {
+        width: 100%;
+        display: block;
+
+        @include bp( md ) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            color: #5a5a5a;
+
+            @include bp( md ) {
+                width: 30%;
+                margin: 0;
+            }
+
+            &:hover i {
+                transform: rotate( 360deg );
+                transition-duration: .4s;
+            }
+            ~ section {
+                margin-top: 56px;
+
+                @include bp( md ) {
+                    margin-top: 0;
+                }
+            }
+
+            i {
+                font-size: 72px;
+            }
+            h4 {
+                margin: 32px 0 16px;
+
+                font-weight: normal;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            p {
+                color: #777;
+            }
+        }
+    }
+}
+
+// ADMIN SECTION
+#admin-section {
+    color: #555;
+    background: #fcfcfc;
+}
+#admin-section-inner {
+    padding: 72px 16px 54px;
+
+    text-align: center;
+
+    @include bp( md ) {
+        padding: 104px 104px 88px;
+
+        text-align: left;
+    }
+
+    .admin-section-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        a {
+            width: 48%;
+            padding-bottom: 40px;
+
+            color: inherit;
+            text-decoration: none;
+            text-align: center;
+            font-family: sofia-pro, sans-serif;
+
+            @include bp( sm ) {
+                width: 30%;
+            }
+            @include bp( md ) {
+                width: 22%;
+            }
+            @include bp( lg ) {
+                width: 15%;
+            }
+
+            &:hover img {
+                filter: saturate( 160% );
+                transform: scale( .9 );
+            }
+
+            img {
+                width: 100%;
+                max-width: 112px;
+
+                transition-duration: .2s;
+
+                @include bp( sm ) {
+                    max-width: 120px;
+                }
+            }
+            h4 {
+                margin: 8px 0 4px;
+
+                font-size: 18px;
+            }
+            p {
+                color: #888;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// CONNECT SECTION
+#connect-section {
+    color: #fff;
+    background: $colorMain;
+}
+#connect-section-text {
+    h3 {
+        margin: 0 0 40px;
+        
+        font-family: sofia-pro, sans-serif;
+        font-style: normal;
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+
+        @include bp( sm ) {
+            font-size: 48px;
+        }
+        @include bp( md ) {
+            margin-bottom: 56px;
+
+            font-size: 56px;
+        }
+        @include bp( lg ) {
+            font-size: 72px;
+        }
+    }
+}
+#connect-section-flexbox {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include bp( md ) {
+        flex-wrap: nowrap;
+    }
+
+    .connect-section-link {
+        width: 100%;
+        margin: 0 8px;
+        padding: 24px 32px;
+        box-sizing: border-box;
+
+        color: #777;
+        background: #fff;
+        font-size: 13px;
+        text-decoration: none;
+        text-align: center;
+        border: solid 8px #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba( 0, 0, 0, .3 );
+
+        transition-duration: .2s;
+        
+        @include bp( sm ) {
+            margin: 0 40px;
+        }
+        @include bp( md ) {
+            width: 45%;
+            margin: 0 8px;
+
+            font-size: 14px;
+        }
+
+        & ~ .connect-section-link {
+            margin-top: 40px;
+
+            @include bp ( md ) {
+                margin-top: 0;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 4px 4px rgba( 0, 0, 0, .3 );
+
+            transform: translateY( 4px );
+        }
+
+        i {
+            margin-bottom: 24px;
+            display: block;
+
+            font-size: 56px;
+            text-align: center;
+        }
+    }
+}
