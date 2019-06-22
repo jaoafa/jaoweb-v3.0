@@ -251,6 +251,11 @@ audio, canvas, progress, video {
   text-shadow: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #header {
   width: 100%;
   height: 50px;
@@ -265,10 +270,6 @@ audio, canvas, progress, video {
   transition-duration: .2s;
 }
 
-#header.toggle-header-background {
-  background: #fff;
-}
-
 #header::after {
   content: "";
   width: 100%;
@@ -281,6 +282,10 @@ audio, canvas, progress, video {
   background-image: -webkit-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
   background-image: -o-linear-gradient(right, #e6fe8f, #ffb41e 50%, #c82e45);
   background-image: linear-gradient(to left, #e6fe8f, #ffb41e 50%, #c82e45);
+}
+
+#header.toggle-header-background {
+  background: #fff;
 }
 
 #header nav {
@@ -361,8 +366,6 @@ audio, canvas, progress, video {
   height: 100vh;
   margin: 0;
   padding: 48px 0 0 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   border-right: solid 1px #ddd;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
@@ -392,8 +395,6 @@ audio, canvas, progress, video {
   width: 100%;
   min-height: 39px;
   margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   position: relative;
   cursor: pointer;
   background: transparent;
@@ -641,8 +642,6 @@ audio, canvas, progress, video {
   max-width: 1200px;
   margin: 0 auto;
   padding: 72px 16px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   overflow: hidden;
   position: relative;
 }
@@ -815,8 +814,6 @@ audio, canvas, progress, video {
   #intro-section-text h3 {
     margin-bottom: 40px;
     padding: 0 32px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     font-size: 32px;
   }
 }
@@ -1078,8 +1075,6 @@ audio, canvas, progress, video {
   width: 100%;
   margin: 0 8px;
   padding: 24px 32px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   color: #777;
   background: #fff;
   font-size: 13px;
@@ -1147,8 +1142,6 @@ audio, canvas, progress, video {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {

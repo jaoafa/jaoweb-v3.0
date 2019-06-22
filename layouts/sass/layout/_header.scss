@@ -15,9 +15,6 @@
 
     transition-duration: .2s;
 
-    &.toggle-header-background {
-        background: #fff;
-    }
     &::after {
         content: "";
         width: 100%;
@@ -33,6 +30,10 @@
             $colorMain 50%, 
             #c82e45 
         );
+    }
+
+    &.toggle-header-background {
+        background: #fff;
     }
     
     nav {
@@ -95,7 +96,6 @@
         height: 100vh;
         margin: 0;
         padding: 48px 0 0 0;
-        box-sizing: border-box;
 
         border-right: solid 1px #ddd;
         box-shadow: 0 0 4px rgba( 0, 0, 0, .3 );
@@ -118,7 +118,6 @@
             width: 100%;
             min-height: 39px;
             margin: 0;
-            box-sizing: border-box;
             position: relative;
             cursor: pointer;
 

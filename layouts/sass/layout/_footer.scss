@@ -16,7 +16,6 @@
         max-width: $widthMax;
         margin: 0 auto;
         padding: 0 16px;
-        box-sizing: border-box;
 
         @include bp( md ) {
             padding: 0 24px;

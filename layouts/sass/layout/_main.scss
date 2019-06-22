@@ -7,7 +7,6 @@
     max-width: $widthMax;
     margin: 0 auto;
     padding: 72px 16px;
-    box-sizing: border-box;
     overflow: hidden;
     position: relative;
 
@@ -162,7 +161,6 @@
         @include bp( md ) {
             margin-bottom: 40px;
             padding: 0 32px;
-            box-sizing: border-box;
 
             font-size: 32px;
         }
@@ -375,7 +373,6 @@
         width: 100%;
         margin: 0 8px;
         padding: 24px 32px;
-        box-sizing: border-box;
 
         color: #777;
         background: #fff;
