@@ -1,0 +1,27 @@
+{
+  "name": "jaoweb",
+  "version": "1.0.0",
+  "description": "![jMS-logo](https://user-images.githubusercontent.com/23224932/42416047-36adc45a-829f-11e8-9d05-46d566c437e8.png)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaoafa/jaoweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaoafa/jaoweb/issues"
+  },
+  "homepage": "https://github.com/jaoafa/jaoweb#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
