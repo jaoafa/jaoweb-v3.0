@@ -2,27 +2,40 @@
 // Foundation > Base
 // -----------------------------------------------------------------
 
+// ----------------
 // Define
+// ----------------
+
+// width
 $widthMax: 1200px;
 
-// Color
+// color
 $colorMain: #ffb41e;
 
-// Breakpoints
+
+// ----------------
+// Mixin
+// ----------------
+
+// breakpoints
 $breakPoints: (
     'sm':  'screen and (min-width: 576px)',
     'md':  'screen and (min-width: 768px)',
     'lg':  'screen and (min-width: 992px)',
     'xl':  'screen and (min-width: 1200px)',
 ) !default;
-
 @mixin bp( $breakPointType: md ) {
     @media #{ map-get( $breakPoints, $breakPointType ) } {
         @content;
     }
 }
 
-// Common
+
+// ----------------
+// Base Style
+// ----------------
+
+// common
 * {
     box-sizing: border-box;
 }

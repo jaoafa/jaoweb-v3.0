@@ -2,6 +2,10 @@
 const gulp = require( "gulp" );
 // Compile Sass Plugin
 const sass = require( "gulp-sass" );
+// Post CSS
+const postcss = require( "gulp-postcss" );
+// Autoprefixer
+const autoprefixer = require( "autoprefixer" );
 
 /**
  * Compile Sass
@@ -13,6 +17,13 @@ const compileSass = () => {
             sass({
                 outputStyle: "expanded"
             })
+        )
+        .pipe(
+            postcss([
+                autoprefixer({
+                    cascade: false
+                })
+            ])
         )
         .pipe(
             gulp.dest( "src/css" )

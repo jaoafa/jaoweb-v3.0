@@ -21,7 +21,14 @@
   },
   "homepage": "https://github.com/jaoafa/jaoweb#readme",
   "devDependencies": {
+    "autoprefixer": "^9.6.0",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "Android >= 5"
+  ]
 }
