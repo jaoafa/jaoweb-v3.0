@@ -11,7 +11,7 @@
 ## GitHub Pages
 
 - トップページ
-  - https://jaoafa.github.io/jaoweb/layouts/html/index.html
+  - https://jaoafa.github.io/jaoweb/src/html/index.html
 
 ## Members
 
