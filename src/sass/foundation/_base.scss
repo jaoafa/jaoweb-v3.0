@@ -19,15 +19,15 @@ $colorMain: #ffb41e;
 
 // breakpoints
 $breakPoints: (
-    'sm':  'screen and (min-width: 576px)',
-    'md':  'screen and (min-width: 768px)',
-    'lg':  'screen and (min-width: 992px)',
-    'xl':  'screen and (min-width: 1200px)',
+  'sm':  'screen and (min-width: 576px)',
+  'md':  'screen and (min-width: 768px)',
+  'lg':  'screen and (min-width: 992px)',
+  'xl':  'screen and (min-width: 1200px)',
 ) !default;
 @mixin bp( $breakPointType: md ) {
-    @media #{ map-get( $breakPoints, $breakPointType ) } {
-        @content;
-    }
+  @media #{ map-get( $breakPoints, $breakPointType ) } {
+    @content;
+  }
 }
 
 
@@ -37,5 +37,5 @@ $breakPoints: (
 
 // common
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
