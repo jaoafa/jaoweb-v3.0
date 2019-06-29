@@ -4,7 +4,7 @@
 
 .section-inner {
   width: 100%;
-  max-width: $widthMax;
+  max-width: $width-max;
   margin: 0 auto;
   padding: 72px 16px;
   overflow: hidden;
@@ -332,7 +332,7 @@
 // CONNECT SECTION
 #connect-section {
   color: #fff;
-  background: $colorMain;
+  background: $color-brand;
 }
 #connect-section-text {
   h3 {

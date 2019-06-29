@@ -3,32 +3,14 @@
 // -----------------------------------------------------------------
 
 // ----------------
-// Define
+// Variable
 // ----------------
 
-// width
-$widthMax: 1200px;
+// Width
+$width-max: 1200px;
 
-// color
-$colorMain: #ffb41e;
-
-
-// ----------------
-// Mixin
-// ----------------
-
-// breakpoints
-$breakPoints: (
-  'sm':  'screen and (min-width: 576px)',
-  'md':  'screen and (min-width: 768px)',
-  'lg':  'screen and (min-width: 992px)',
-  'xl':  'screen and (min-width: 1200px)',
-) !default;
-@mixin bp( $breakPointType: md ) {
-  @media #{ map-get( $breakPoints, $breakPointType ) } {
-    @content;
-  }
-}
+// Color
+$color-brand: #ffb41e;
 
 
 // ----------------
