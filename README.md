@@ -1,12 +1,10 @@
-# jao Minecraft Server Website
-
-![jMS-logo](https://user-images.githubusercontent.com/23224932/42416047-36adc45a-829f-11e8-9d05-46d566c437e8.png)
+# ![jMS-logo](https://user-images.githubusercontent.com/23224932/42416047-36adc45a-829f-11e8-9d05-46d566c437e8.png)
 
 [jao Minecraft Server](https://jaoafa.com)のWebサイトリニューアルのためのリポジトリです。進捗はダメです。
 
 必要な機能、必要な画面、将来的に実装できたらいいなという願望については、以下のファイルに記述してください。
 
-- docs/documentation.md
+- [docs/documentation.md](https://github.com/jaoafa/jaoweb/blob/master/docs/documentation.md)
 
 ## GitHub Pages
 
