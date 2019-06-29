@@ -10,70 +10,104 @@
   <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
-  <header id="header">
-    <nav>
-      <button id="header-navigation-toggle"><span></span></button>
-      <div id="header-navigation">
-        <ul>
-          <li class="header-navigation-list">
-            <a href="" title="ホームに戻る">HOME</a>
-          </li>
-          <li class="header-navigation-list">
-            <span>SERVER</span>
-            <ul>
-              <li title="バージョン情報、方針、運営者等">
-                <a href="">情報</a>
-              </li>
-              <li title="利用する際の規則">
-                <a href="">規則</a>
-              </li>
-              <li title="これまでの歴史">
-                <a href="">歴史</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header-navigation-list">
-            <span>COMMUNITY</span>
-            <ul>
-              <li title="独自の言語や用語">
-                <a href="">独自言語</a>
-              </li>
-              <li title="ワールドに存在する自治体">
-                <a href="">自治体</a>
-              </li>
-              <li title="投稿された画像の鑑賞">
-                <a href="">ギャラリー</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header-navigation-list">
-            <span>BLOG</span>
-            <ul>
-              <li title="運営からのお知らせ">
-                <a href="">重要なお知らせ</a>
-              </li>
-              <li title="サーバの機能やMod解説等">
-                <a href="">お役立ち情報</a>
-              </li>
-              <li title="一般ユーザが投稿した記事">
-                <a href="">ユーザ投稿</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header-navigation-list">
-            <a href="" title="お問い合わせ">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-      <a href="" id="header-loginuser">
-        <div class="header-loginuser-icon">
-          <img src="https://secure.gravatar.com/avatar/16f38857b5cc103612d1c3f2ff5df26e?s=182" alt="icon" />
+  <header class="l-header">
+    <div id="header" class="p-header">
+      <div class="p-header__inner">
+        <button id="header-navigation-toggle" class="p-header__hamburger">
+          <span></span>
+        </button>
+        <div id="header-navigation" class="p-header__nav">
+          <ul class="p-header-nav">
+            <li class="p-header-nav__list-item p-header-nav__list-item--first">
+              <a href="" class="p-header-nav__list-content">
+                HOME
+              </a>
+            </li>
+            <li class="p-header-nav__list-item p-header-nav__list-item--first">
+              <span class="p-header-nav__list-content">
+                SERVER
+              </span>
+              <ul class="p-header-nav__list-container">
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    情報
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    規則
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    歴史
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-header-nav__list-item p-header-nav__list-item--first">
+              <span class="p-header-nav__list-content">
+                COMMUNITY
+              </span>
+              <ul class="p-header-nav__list-container">
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    独自言語
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    自治体
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    ギャラリー
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-header-nav__list-item p-header-nav__list-item--first">
+              <span class="p-header-nav__list-content">
+                BLOG
+              </span>
+              <ul class="p-header-nav__list-container">
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    重要なお知らせ
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    お役立ち情報
+                  </a>
+                </li>
+                <li class="p-header-nav__list-item p-header-nav__list-item--second">
+                  <a href="" class="p-header-nav__list-content">
+                    ユーザ投稿
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-header-nav__list-item p-header-nav__list-item--first">
+              <a href="" class="p-header-nav__list-content">
+                CONTACT
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="header-loginuser-username">
-          <span>Hirotaisou2012</span>
+        <div class="p-header__login">
+          <a href="" id="header-loginuser" class="p-login-user">
+            <div class="p-login-user__icon">
+              <img src="https://secure.gravatar.com/avatar/16f38857b5cc103612d1c3f2ff5df26e?s=182" alt="icon" />
+            </div>
+            <div class="p-login-user__username">
+              Hirotaisou2012
+            </div>
+          </a>
         </div>
-      </a>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main>
     <section id="hero-section">

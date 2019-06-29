@@ -1,0 +1,164 @@
+//
+// Project > Header
+// -----------------------------------------------------------------
+
+.p-header {
+  height: 100%;
+  background: transparent;
+  transition-duration: .2s;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to left, 
+      #e6fe8f, 
+      $color-brand 50%, 
+      #c82e45 
+    );
+  }
+
+  &.is-notTop {
+    background: #fff;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: $width-max;
+    height: 48px;
+    margin: 0 auto;
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: transparent;
+
+    @include bp( md ) {
+      padding: 4px 24px;
+    }
+  }
+
+  &__hamburger {
+    width: 24px;
+    height: 39px;
+    position: relative;
+    z-index: 200;
+    cursor: pointer;
+  
+    @include bp( md ) {
+      display: none;
+    }
+  
+    &.is-notTop {
+      span {
+        background: #555;
+        box-shadow: 0 0 3px transparent;
+  
+        &::before, &::after {
+          background: #555;
+          box-shadow: 0 0 3px transparent;
+        }
+      }
+    }
+
+    span {
+      width: 100%;
+      height: 2px;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 0 3px #aaa;
+      transition-duration: .2s;
+  
+      &::before, &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 0 3px #aaa;
+        transition-duration: .2s;
+      }
+
+      &::before {
+        transform: translateY( -8px );
+      }
+
+      &::after {
+        transform: translateY( 8px );
+      }
+
+      &.is-view {
+        background: transparent;
+        box-shadow: 0 0 3px transparent;
+  
+        &::before {
+          background: #555;
+          box-shadow: 0 0 3px transparent;
+          transform: translateY( 0 ) rotateZ( 45deg );
+        }
+
+        &::after {
+          background: #555;
+          box-shadow: 0 0 3px transparent;
+          transform: translateY( 0 ) rotateZ( -45deg );
+        }
+      }
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: -204px;
+    z-index: 150;
+    color: #444;
+    background: #fff;
+    font-size: 13px;
+    transition-property: transform, color;
+    transition-duration: .2s;
+  
+    @include bp( md ) {
+      position: relative;
+      left: 0;
+      z-index: 200;
+      color: #fff;
+      background: transparent;
+      text-shadow: 0 0 3px #444;
+      font-size: 12px;
+    }
+  
+    &.is-view {
+      transform: translateX( 204px );
+  
+      @include bp( md ) {
+        transform: none;
+      }
+    }
+
+    &.is-notTop {
+      @include bp( md ) {
+        color: #444;
+        text-shadow: none;
+      }
+    }
+  }
+
+  &__login {
+    height: 100%;
+  }
+}
