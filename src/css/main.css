@@ -318,8 +318,11 @@ html {
 }
 
 #hero-section {
-  position: relative;
   border-bottom: solid 1px #eee;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -100;
 }
 
 #hero-section #hero-section-inner {
@@ -420,6 +423,15 @@ html {
 }
 
 @media screen and (min-width: 992px) {
+  #intro-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -99;
+  }
+}
+
+@media screen and (min-width: 992px) {
   #intro-section-inner {
     padding: 120px 24px;
   }
@@ -488,6 +500,15 @@ html {
 #feature-section {
   color: #555;
   background: #f0f0f0;
+}
+
+@media screen and (min-width: 992px) {
+  #feature-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -98;
+  }
 }
 
 #feature-section-inner {
@@ -566,6 +587,15 @@ html {
 #admin-section {
   color: #555;
   background: #fcfcfc;
+}
+
+@media screen and (min-width: 992px) {
+  #admin-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -97;
+  }
 }
 
 #admin-section-inner {
@@ -651,6 +681,15 @@ html {
 #connect-section {
   color: #fff;
   background: #ffb41e;
+}
+
+@media screen and (min-width: 992px) {
+  #connect-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: -96;
+  }
 }
 
 #connect-section-text h3 {

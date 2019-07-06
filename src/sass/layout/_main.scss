@@ -45,9 +45,10 @@
 
 // HERO SECTION
 #hero-section {
-  position: relative;
-
   border-bottom: solid 1px #eee;
+  position: sticky;
+  top: 0;
+  z-index: -100;
 
   #hero-section-inner {
     height: 100%;
@@ -132,6 +133,12 @@
 #intro-section {
   color: #666;
   background: #fff;
+
+  @include bp( lg ) {
+    position: sticky;
+    top: 0;
+    z-index: -99;
+  }
 }
 #intro-section-inner {
 
@@ -200,6 +207,12 @@
 #feature-section {
   color: #555;
   background: #f0f0f0;
+
+  @include bp( lg ) {
+    position: sticky;
+    top: 0;
+    z-index: -98;
+  }
 }
 #feature-section-inner {
   text-align: center;
@@ -264,6 +277,12 @@
 #admin-section {
   color: #555;
   background: #fcfcfc;
+
+  @include bp( lg ) {
+    position: sticky;
+    top: 0;
+    z-index: -97;
+  }
 }
 #admin-section-inner {
   padding: 72px 16px 54px;
@@ -333,6 +352,12 @@
 #connect-section {
   color: #fff;
   background: $color-brand;
+
+  @include bp( lg ) {
+    position: sticky;
+    top: 0;
+    z-index: -96;
+  }
 }
 #connect-section-text {
   h3 {
