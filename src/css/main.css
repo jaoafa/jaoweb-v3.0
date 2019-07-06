@@ -322,7 +322,7 @@ html {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: -100;
+  z-index: 0;
 }
 
 #hero-section #hero-section-inner {
@@ -427,7 +427,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: -99;
+    z-index: 1;
   }
 }
 
@@ -507,7 +507,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: -98;
+    z-index: 2;
   }
 }
 
@@ -594,7 +594,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: -97;
+    z-index: 3;
   }
 }
 
@@ -688,7 +688,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: -96;
+    z-index: 4;
   }
 }
 
