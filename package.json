@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jaoafa/jaoweb#readme",
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2"
