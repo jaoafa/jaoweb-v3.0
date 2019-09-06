@@ -1,0 +1,47 @@
+//
+// Foundation > Base
+// -----------------------------------------------------------------
+
+// ----------------
+// Variable
+// ----------------
+
+// Width
+$width-main-max: 1200px;
+$width-entry-max: 728px;
+
+// Font Size
+$fontsize-base: 1rem;
+$fontsize-l4: $fontsize-base * 8 / 4;
+$fontsize-l3: $fontsize-base * 8 / 5;
+$fontsize-l2: $fontsize-base * 8 / 6;
+$fontsize-l1: $fontsize-base * 8 / 7;
+$fontsize-s1: $fontsize-base * 8 / 9;
+$fontsize-s2: $fontsize-base * 8 / 10;
+$fontsize-s3: $fontsize-base * 8 / 11;
+$fontsize-s4: $fontsize-base * 8 / 12;
+
+// Font Family
+$fontfamily-base: 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Meiryo','メイリオ','Meiryo UI','游ゴシック','Yu Gothic',sans-serif;
+
+
+// ----------------
+// Base Style
+// ----------------
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: $fontfamily-base;
+}
+body {
+  position: relative;
+}
+a {
+  color: inherit;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
