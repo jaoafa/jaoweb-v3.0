@@ -1,0 +1,29 @@
+{
+  "name": "jaoweb",
+  "version": "0.0.1",
+  "description": "jao Minecraft Server Website",
+  "main": "main.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": "https://github.com/jaoafa/jaoweb",
+  "author": "Hiratake",
+  "license": "none",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^4.1.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.39.3",
+    "webpack-stream": "^5.2.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "Android >= 5"
+  ]
+}
