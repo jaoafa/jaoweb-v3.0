@@ -9,7 +9,9 @@ Webサイトについてのメモ書き（必要な画面など）は、以下�
 ## GitHub Pages
 
 - トップページ
-  - https://jaoafa.github.io/jaoweb/src/html/index.html
+  - https://jaoafa.github.io/jaoweb/dist/index.html
+- 記事ページ
+  - https://jaoafa.github.io/jaoweb/dist/article.html
 
 ## Members
 
