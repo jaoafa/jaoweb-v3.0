@@ -131,7 +131,15 @@ const minifyImage = () => {
         optimizationLevel: 1,
         colors: 256
       }),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+          { optimizationLevel: 3 },
+          { interlaced: true },
+          { removeViewBox: false },
+          { removeUselessStrokeAndFill: false },
+          { cleanupIDs: false }
+        ]
+      })
     ])
   )
   .pipe(
