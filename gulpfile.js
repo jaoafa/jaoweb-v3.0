@@ -12,6 +12,9 @@ const postcss           = require( "gulp-postcss" );
 const autoprefixer      = require( "autoprefixer" );
 const ejs               = require( "gulp-ejs" );
 const rename            = require( "gulp-rename" );
+const imagemin          = require( "gulp-imagemin" );
+const pngmin            = require( "imagemin-pngquant" );
+const jpgmin            = require( "imagemin-mozjpeg" );
 const webpack           = require( "webpack" );
 const webpackstream     = require( "webpack-stream" );
 
@@ -35,7 +38,7 @@ const paths = {
     dest: "./dist/js"
   },
   image: {
-    src:  "./src/img/**/*",
+    src:  "./src/img/**/*.{jpg,png,svg,gif}",
     dest: "./dist/img"
   }
 };
@@ -112,6 +115,30 @@ const bundleJS = () => {
   );
 };
 
+// Minify Image Files
+const minifyImage = () => {
+  return gulp
+  .src(
+    paths.image.src,
+    { since: gulp.lastRun( minifyImage ) }
+  )
+  .pipe(
+    imagemin([
+      pngmin({ quality: [0.65, 0.8] }),
+      jpgmin({ quality: 85 }),
+      imagemin.gifsicle({
+        interlaced: false,
+        optimizationLevel: 1,
+        colors: 256
+      }),
+      imagemin.svgo()
+    ])
+  )
+  .pipe(
+    gulp.dest( paths.image.dest )
+  );
+};
+
 // Watch Sass Files
 const watchSass = ( cb ) => {
   gulp
@@ -142,6 +169,16 @@ const watchJS = ( cb ) => {
   cb();
 };
 
+// Watch Image Files
+const watchImage = ( cb ) => {
+  gulp
+  .watch(
+    paths.image.src,
+    gulp.series( minifyImage, reloadBrowser )
+  );
+  cb();
+};
+
 
 // -----------------------------------------------------------------
 // Exports
@@ -152,6 +189,7 @@ exports.build = gulp.series(
   gulp.parallel(
     watchSass,
     watchEjs,
-    watchJS
+    watchJS,
+    watchImage
   )
 );
