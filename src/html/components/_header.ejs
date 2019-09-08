@@ -1,7 +1,8 @@
 <%
   if( typeof meta === "undefined" ) {
     var meta = {
-      title: ""
+      title: "",
+      pagetype: "home"
     }
   }
   else {
@@ -35,7 +36,7 @@
             <span></span>
           </button>
           <ul class="p-globalNavigation__container">
-            <li class="p-globalNavigation__item">
+            <li class="p-globalNavigation__item<% if( meta.pagetype === 'home' ) { %> is-current<% } %>">
               <a class="p-globalNavigation__textContainer" href="">
                 <span class="p-globalNavigation__text p-globalNavigation__text--en">
                   HOME
@@ -45,7 +46,7 @@
                 </span>
               </a>
             </li>
-            <li class="p-globalNavigation__item">
+            <li class="p-globalNavigation__item<% if( meta.pagetype === 'server' ) { %> is-current<% } %>">
               <div class="p-globalNavigation__textContainer" href="">
                 <span class="p-globalNavigation__text p-globalNavigation__text--en">
                   SERVER
@@ -67,7 +68,7 @@
                 </li>
               </ul>
             </li>
-            <li class="p-globalNavigation__item is-current">
+            <li class="p-globalNavigation__item<% if( meta.pagetype === 'blog' ) { %> is-current<% } %>">
               <div class="p-globalNavigation__textContainer" href="">
                 <span class="p-globalNavigation__text p-globalNavigation__text--en">
                   BLOG
@@ -94,7 +95,7 @@
                 </li>
               </ul>
             </li>
-            <li class="p-globalNavigation__item">
+            <li class="p-globalNavigation__item<% if( meta.pagetype === 'community' ) { %> is-current<% } %>">
               <div class="p-globalNavigation__textContainer" href="">
                 <span class="p-globalNavigation__text p-globalNavigation__text--en">
                   COMMUNITY
@@ -116,7 +117,7 @@
                 </li>
               </ul>
             </li>
-            <li class="p-globalNavigation__item">
+            <li class="p-globalNavigation__item<% if( meta.pagetype === 'contact' ) { %> is-current<% } %>">
               <a class="p-globalNavigation__textContainer" href="">
                 <span class="p-globalNavigation__text p-globalNavigation__text--en">
                   CONTACT
@@ -131,3 +132,4 @@
       </nav>
     </div>
   </header>
+  <main>
