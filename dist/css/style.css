@@ -381,6 +381,16 @@ a {
   display: inline;
 }
 
+.p-breadcrumb__item:first-child {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-breadcrumb__item:first-child {
+    display: inline;
+  }
+}
+
 .p-breadcrumb__item:not(:last-child)::after {
   content: "\f105";
   margin: 0 2px 0 4px;

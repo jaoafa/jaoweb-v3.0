@@ -21,6 +21,13 @@
 .p-breadcrumb__item {
   display: inline;
 
+  &:first-child {
+    display: none;
+
+    @include bp( md ) {
+      display: inline;
+    }
+  }
   &:not(:last-child) {
     &::after {
       content: "\f105";
