@@ -274,6 +274,16 @@ a {
   color: inherit;
 }
 
+.l-article__header {
+  height: 60vh;
+}
+
+@media screen and (min-width: 768px) {
+  .l-article__header {
+    height: 70vh;
+  }
+}
+
 .l-header {
   width: 100%;
   position: fixed;
@@ -357,6 +367,112 @@ a {
   vertical-align: top;
   line-height: 1;
   fill: currentColor;
+}
+
+.p-articleHeader {
+  height: 100%;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 8px #202020;
+  -webkit-box-shadow: 0 0 4px #535353;
+  box-shadow: 0 0 4px #535353;
+}
+
+@media screen and (min-width: 768px) {
+  .p-articleHeader {
+    -webkit-box-shadow: 0 0 8px #535353;
+    box-shadow: 0 0 8px #535353;
+  }
+}
+
+.p-articleHeader__eyecatch {
+  height: 100%;
+}
+
+.p-articleHeader__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-articleHeader__image:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+.p-articleHeader__info {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-articleHeader__info {
+    padding: 80px 24px;
+    text-align: left;
+  }
+}
+
+.p-articleHeader__title {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  .p-articleHeader__title {
+    font-size: 2.66667rem;
+  }
+}
+
+.p-articleHeader__meta {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-articleHeader__meta {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 0.88889rem;
+  }
+}
+
+.p-articleHeader__metaItem {
+  margin: 0 8px 8px 0;
+  padding: 0 8px;
+  background: transparent;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-articleHeader__metaItem:hover {
+  background: #202020;
+}
+
+.p-articleHeader__metaItem a {
+  text-decoration: none;
 }
 
 .p-breadcrumb {
