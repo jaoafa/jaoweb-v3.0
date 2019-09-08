@@ -1,0 +1,77 @@
+//
+// Object > Project > Global Navigation Item
+// -----------------------------------------------------------------
+
+.p-globalNavItem__container {
+  padding: $padding-base $padding-x2;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-gray-1;
+    background: $color-gray-8;
+
+    @include bp( md ) {
+      background: transparent;
+    }
+  }
+}
+
+.p-globalNavItem__text {
+  line-height: 1.5;
+  user-select: none;
+
+  @include bp( md ) {
+    display: block;
+  }
+
+  &--en {
+    padding-right: $padding-base;
+    font-family: $fontfamily-en;
+
+    @include bp( md ) {
+      padding-right: 0;
+    }
+  }
+  &--ja {
+    font-size: $fontsize-s4;
+  }
+}
+
+.p-globalNavItem__accordion {
+  width: 100%;
+  height: 0;
+  padding: 0 $padding-x2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  list-style: none;
+  color: $color-gray-3;
+  background: $color-gray-9;
+  font-size: $fontsize-s1;
+  transition-duration: .2s;
+
+  @include bp( md ) {
+    position: absolute;
+    left: 0;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 ) + 1px;
+    font-size: $fontsize-base;
+  }
+
+  &.is-view {
+    height: auto;
+    padding: $padding-x2 $padding-x2;
+  }
+}
+
+.p-globalNavItem__accordionItemText {
+  padding: $padding-base;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

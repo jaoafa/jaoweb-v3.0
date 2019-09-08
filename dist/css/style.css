@@ -468,7 +468,7 @@ a {
   }
 }
 
-.p-globalNav__textContainer {
+.p-globalNavItem__container {
   padding: 8px 16px;
   display: block;
   text-align: center;
@@ -476,18 +476,18 @@ a {
   cursor: pointer;
 }
 
-.p-globalNav__textContainer:hover {
+.p-globalNavItem__container:hover {
   color: #3c3c3c;
   background: #e0e0e0;
 }
 
 @media screen and (min-width: 768px) {
-  .p-globalNav__textContainer:hover {
+  .p-globalNavItem__container:hover {
     background: transparent;
   }
 }
 
-.p-globalNav__text {
+.p-globalNavItem__text {
   line-height: 1.5;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -496,27 +496,27 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .p-globalNav__text {
+  .p-globalNavItem__text {
     display: block;
   }
 }
 
-.p-globalNav__text--en {
+.p-globalNavItem__text--en {
   padding-right: 8px;
   font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
-  .p-globalNav__text--en {
+  .p-globalNavItem__text--en {
     padding-right: 0;
   }
 }
 
-.p-globalNav__text--ja {
+.p-globalNavItem__text--ja {
   font-size: 0.66667rem;
 }
 
-.p-globalNav__childContainer {
+.p-globalNavItem__accordion {
   width: 100%;
   height: 0;
   padding: 0 16px;
@@ -538,7 +538,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .p-globalNav__childContainer {
+  .p-globalNavItem__accordion {
     position: absolute;
     left: 0;
     top: 77.26667px;
@@ -546,17 +546,17 @@ a {
   }
 }
 
-.p-globalNav__childContainer.is-view {
+.p-globalNavItem__accordion.is-view {
   height: auto;
   padding: 16px 16px;
 }
 
-.p-globalNav__childItemText {
+.p-globalNavItem__accordionItemText {
   padding: 8px;
   display: inline-block;
 }
 
-.p-globalNav__childItemText:hover {
+.p-globalNavItem__accordionItemText:hover {
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

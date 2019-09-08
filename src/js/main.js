@@ -16,11 +16,11 @@
     globalNavigation.classList.toggle( 'is-view' );
   });
 
-  var globalNavigationChildItems = document.getElementsByClassName( 'p-globalNav__item' );
+  var globalNavigationChildItems = document.getElementsByClassName( 'p-globalNavItem' );
   for( let index = 0; index < globalNavigationChildItems.length; index++ ) {
     globalNavigationChildItems[index].addEventListener( 'click', function() {
       for( let count = 0; count < globalNavigationChildItems.length; count++ ) {
-        let elem = globalNavigationChildItems[count].querySelector( '.p-globalNav__childContainer' );
+        let elem = globalNavigationChildItems[count].querySelector( '.p-globalNavItem__accordion' );
         if( elem != null ) {
           if( count === index ) {
             elem.classList.toggle( 'is-view' );
