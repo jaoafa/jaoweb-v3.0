@@ -9,3 +9,30 @@
     height: 72vh;
   }
 }
+
+.l-article__main {
+  max-width: $width-main-max;
+  margin: auto;
+  padding: 0 $padding-x2;
+  position: relative;
+
+  @include bp( md ) {
+    padding: 0 $padding-x3;
+  }
+}
+
+.l-article__content {
+  max-width: $width-entry-max;
+  margin: auto;
+  padding: $padding-x6 0 0 0;
+}
+
+.l-article__share {
+  @include bp( md ) {
+    height: 100%;
+    padding-top: $padding-x6;
+    position: absolute;
+    left: $padding-x3;
+    top: 0;
+  }
+}

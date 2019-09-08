@@ -1,0 +1,15 @@
+//
+// Object > Project > Article Share
+// -----------------------------------------------------------------
+
+.p-articleShare {
+  @include bp( md ) {
+    position: sticky;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 * 2 ) + $padding-x6;
+
+// 配置確認用
+width: 48px;
+height: 200px;
+background: $color-black;
+  }
+}
