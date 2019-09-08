@@ -315,6 +315,10 @@ a:hover {
   }
 }
 
+.l-header__logo:hover {
+  color: #3c3c3c;
+}
+
 .c-logo {
   width: 100%;
 }

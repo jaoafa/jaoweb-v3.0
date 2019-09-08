@@ -32,4 +32,8 @@
     width: 224px;
     padding: $padding-x3 0;
   }
+
+  &:hover {
+    color: $color-gray-1;
+  }
 }
