@@ -1,0 +1,17 @@
+//
+// Object > Component > Logo
+// -----------------------------------------------------------------
+
+.c-logo {
+  width: 100%;
+}
+
+.c-logo__image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  fill: currentColor;
+}

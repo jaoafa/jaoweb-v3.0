@@ -1,0 +1,35 @@
+//
+// Layout > Header
+// -----------------------------------------------------------------
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: solid 1px $color-primary;
+}
+
+.l-header__inner {
+  max-width: $width-main-max;
+  margin: auto;
+  padding: 0 $padding-x2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include bp( md ) {
+    padding: 0 $padding-x3;
+  }
+}
+
+.l-header__logo {
+  width: 120px;
+  padding: $padding-x2 0;
+  color: $color-black;
+
+  @include bp( md ) {
+    width: 224px;
+    padding: $padding-x3 0;
+  }
+}
