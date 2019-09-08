@@ -76,19 +76,19 @@
   transform: translateY( -16px );
   transition-duration: .2s;
 
-  &.is-view {
+  @include bp( md ) {
+    padding: 0;
+    position: initial;
+    overflow-y: initial;
+    border-bottom: none;
     pointer-events: all;
     opacity: 1;
     transform: translateY( 0 );
   }
 
-  @include bp( md ) {
-    padding: 0;
-    position: static;
-    border-bottom: none;
+  &.is-view {
     pointer-events: all;
     opacity: 1;
-    overflow-y: auto;
     transform: translateY( 0 );
   }
 }
@@ -128,6 +128,7 @@
 
 .p-globalNavigation__text {
   line-height: 1.5;
+  user-select: none;
 
   @include bp( md ) {
     display: block;
@@ -155,9 +156,17 @@
   flex-wrap: wrap;
   overflow: hidden;
   list-style: none;
-  background: $color-gray-8;
+  color: $color-gray-3;
+  background: $color-gray-9;
   font-size: $fontsize-s1;
   transition-duration: .2s;
+
+  @include bp( md ) {
+    position: absolute;
+    left: 0;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 ) + 1px;
+    font-size: $fontsize-base;
+  }
 
   &.is-view {
     height: auto;
@@ -168,4 +177,8 @@
 .p-globalNavigation__childItemText {
   padding: $padding-base;
   display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

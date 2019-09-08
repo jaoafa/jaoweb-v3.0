@@ -19,7 +19,17 @@
   var globalNavigationChildItems = document.getElementsByClassName( 'p-globalNavigation__item' );
   for( let index = 0; index < globalNavigationChildItems.length; index++ ) {
     globalNavigationChildItems[index].addEventListener( 'click', function() {
-      globalNavigationChildItems[index].querySelector( '.p-globalNavigation__childContainer' ).classList.toggle( 'is-view' );
+      for( let count = 0; count < globalNavigationChildItems.length; count++ ) {
+        let elem = globalNavigationChildItems[count].querySelector( '.p-globalNavigation__childContainer' );
+        if( elem != null ) {
+          if( count === index ) {
+            elem.classList.toggle( 'is-view' );
+          }
+          else {
+            elem.classList.remove( 'is-view' );
+          }
+        }
+      }
     });
   }
 
