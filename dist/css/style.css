@@ -275,12 +275,12 @@ a {
 }
 
 .l-article__header {
-  height: 60vh;
+  height: 56vh;
 }
 
 @media screen and (min-width: 768px) {
   .l-article__header {
-    height: 70vh;
+    height: 72vh;
   }
 }
 
