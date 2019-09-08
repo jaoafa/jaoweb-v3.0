@@ -263,6 +263,7 @@ html {
 
 body {
   position: relative;
+  color: #202020;
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
@@ -273,16 +274,16 @@ a {
   color: inherit;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 .l-header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: solid 1px #ffb41d;
+  z-index: 100;
+  background: #fff;
+  border-bottom: solid 1px #e0e0e0;
+  -webkit-box-shadow: 0 0 8px #e0e0e0;
+  box-shadow: 0 0 8px #e0e0e0;
 }
 
 .l-header__inner {
@@ -309,7 +310,6 @@ a:hover {
 .l-header__logo {
   width: 120px;
   padding: 16px 0;
-  color: #202020;
 }
 
 @media screen and (min-width: 768px) {
@@ -335,5 +335,177 @@ a:hover {
   vertical-align: top;
   line-height: 1;
   fill: currentColor;
+}
+
+.p-globalNavigation__hamburger {
+  width: 20px;
+  height: 24px;
+  position: relative;
+  z-index: 110;
+  cursor: pointer;
+}
+
+.p-globalNavigation__hamburger span {
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #202020;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-globalNavigation__hamburger span::before, .p-globalNavigation__hamburger span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #202020;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-globalNavigation__hamburger span::before {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.p-globalNavigation__hamburger span::after {
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
+.p-globalNavigation__hamburger span.is-view {
+  background: transparent;
+}
+
+.p-globalNavigation__hamburger span.is-view::before {
+  -webkit-transform: translateY(0) rotateZ(45deg);
+  transform: translateY(0) rotateZ(45deg);
+}
+
+.p-globalNavigation__hamburger span.is-view::after {
+  -webkit-transform: translateY(0) rotateZ(-45deg);
+  transform: translateY(0) rotateZ(-45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__hamburger {
+    display: none;
+  }
+}
+
+.p-globalNavigation__container {
+  padding: 24px 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 120;
+  background: #fff;
+  border-bottom: solid 2px #e0e0e0;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transform: translateY(-16px);
+  transform: translateY(-16px);
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-globalNavigation__container.is-view {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__container {
+    padding: 0;
+    position: static;
+    border-bottom: none;
+    pointer-events: all;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.p-globalNavigation__item {
+  width: 100%;
+  border-bottom: solid 1px transparent;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__item {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__item.is-current, .p-globalNavigation__item:hover {
+    border-bottom: solid 1px #ffb41d;
+  }
+}
+
+.p-globalNavigation__item:hover {
+  color: #3c3c3c;
+  background: #e0e0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__item:hover {
+    background: transparent;
+  }
+}
+
+.p-globalNavigation__textContainer {
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.p-globalNavigation__text {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__text {
+    display: block;
+  }
+}
+
+.p-globalNavigation__text--en {
+  padding-right: 8px;
+  font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavigation__text--en {
+    padding-right: 0;
+  }
+}
+
+.p-globalNavigation__text--ja {
+  font-size: 0.66667rem;
 }
 /*# sourceMappingURL=style.css.map */

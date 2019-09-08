@@ -7,7 +7,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: solid 1px $color-primary;
+  z-index: 100;
+  background: $color-white;
+  border-bottom: solid 1px $color-gray-8;
+  box-shadow: 0 0 8px $color-gray-8;
 }
 
 .l-header__inner {
@@ -24,12 +27,11 @@
 }
 
 .l-header__logo {
-  width: 120px;
+  width: $width-header-logo-mobile;
   padding: $padding-x2 0;
-  color: $color-black;
 
   @include bp( md ) {
-    width: 224px;
+    width: $width-header-logo-pc;
     padding: $padding-x3 0;
   }
 

@@ -1,0 +1,143 @@
+//
+// Object > Project > Global Navigation
+// -----------------------------------------------------------------
+
+.p-globalNavigation__hamburger {
+  width: 20px;
+  height: 24px;
+  position: relative;
+  z-index: 110;
+  cursor: pointer;
+
+  span {
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $color-black;
+    transition-duration: .2s;
+
+    &::before, &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $color-black;
+      transition-duration: .2s;
+    }
+    &::before {
+      transform: translateY( -6px );
+    }
+    &::after {
+      transform: translateY( 6px );
+    }
+    &.is-view {
+      background: transparent;
+  
+      &::before {
+        transform: translateY( 0 ) rotateZ( 45deg );
+      }
+      &::after {
+        transform: translateY( 0 ) rotateZ( -45deg );
+      }
+    }
+  }
+
+  @include bp( md ) {
+    display: none;
+  }
+}
+
+.p-globalNavigation__container {
+  padding: $padding-x3 0 $padding-x4;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 );
+  z-index: 120;
+  background: $color-white;
+  border-bottom: solid 2px $color-gray-8;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY( -16px );
+  transition-duration: .2s;
+
+  &.is-view {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY( 0 );
+  }
+
+  @include bp( md ) {
+    padding: 0;
+    position: static;
+    border-bottom: none;
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY( 0 );
+  }
+}
+
+.p-globalNavigation__item {
+  width: 100%;
+  border-bottom: solid 1px transparent;
+  transition-duration: .2s;
+
+  @include bp( md ) {
+    width: auto;
+  }
+
+  &.is-current, &:hover {
+    @include bp( md ) {
+      border-bottom: solid 1px $color-primary;
+    }
+  }
+  &:hover {
+    color: $color-gray-1;
+    background: $color-gray-8;
+
+    @include bp( md ) {
+      background: transparent;
+    }
+  }
+}
+
+.p-globalNavigation__textContainer {
+  padding: $padding-base $padding-x2;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.p-globalNavigation__text {
+  line-height: 1.5;
+
+  @include bp( md ) {
+    display: block;
+  }
+
+  &--en {
+    padding-right: $padding-base;
+    font-family: $fontfamily-en;
+
+    @include bp( md ) {
+      padding-right: 0;
+    }
+  }
+  &--ja {
+    font-size: $fontsize-s4;
+  }
+}
