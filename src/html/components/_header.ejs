@@ -1,12 +1,11 @@
 <%
   if( typeof meta === "undefined" ) {
-    var meta = {
-      title: "",
-      pagetype: "home"
-    }
+    var title = "";
+    var pagetype = "home"
   }
   else {
-    meta.title = meta.title + "｜";
+    var title = meta.title + "｜";
+    var pagetype = meta.pagetype;
   }
 -%>
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%= meta.title %>jao Minecraft Server</title>
+  <title><%= title %>jao Minecraft Server</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.typekit.net/ibc0rnp.css">
   <link rel="stylesheet" href="./css/style.css" />
@@ -36,7 +35,7 @@
             <span></span>
           </button>
           <ul class="p-globalNav__container">
-            <li class="p-globalNav__item<% if( meta.pagetype === 'home' ) { %> is-current<% } %>">
+            <li class="p-globalNav__item<% if( pagetype === 'home' ) { %> is-current<% } %>">
               <div class="p-globalNavItem">
                 <a class="p-globalNavItem__container" href="">
                   <span class="p-globalNavItem__text p-globalNavItem__text--en">
@@ -48,7 +47,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-globalNav__item<% if( meta.pagetype === 'server' ) { %> is-current<% } %>">
+            <li class="p-globalNav__item<% if( pagetype === 'server' ) { %> is-current<% } %>">
               <div class="p-globalNavItem">
                 <div class="p-globalNavItem__container" href="">
                   <span class="p-globalNavItem__text p-globalNavItem__text--en">
@@ -72,7 +71,7 @@
                 </ul>
               </div>
             </li>
-            <li class="p-globalNav__item<% if( meta.pagetype === 'blog' ) { %> is-current<% } %>">
+            <li class="p-globalNav__item<% if( pagetype === 'blog' ) { %> is-current<% } %>">
               <div class="p-globalNavItem">
                 <div class="p-globalNavItem__container" href="">
                   <span class="p-globalNavItem__text p-globalNavItem__text--en">
@@ -101,7 +100,7 @@
                 </ul>
               </div>
             </li>
-            <li class="p-globalNav__item<% if( meta.pagetype === 'community' ) { %> is-current<% } %>">
+            <li class="p-globalNav__item<% if( pagetype === 'community' ) { %> is-current<% } %>">
               <div class="p-globalNavItem">
                 <div class="p-globalNavItem__container" href="">
                   <span class="p-globalNavItem__text p-globalNavItem__text--en">
@@ -125,7 +124,7 @@
                 </ul>
               </div>
             </li>
-            <li class="p-globalNav__item<% if( meta.pagetype === 'contact' ) { %> is-current<% } %>">
+            <li class="p-globalNav__item<% if( pagetype === 'contact' ) { %> is-current<% } %>">
               <div class="p-globalNavItem">
                 <a class="p-globalNavItem__container" href="">
                   <span class="p-globalNavItem__text p-globalNavItem__text--en">
@@ -142,4 +141,4 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="l-main">
