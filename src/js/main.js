@@ -16,4 +16,11 @@
     globalNavigation.classList.toggle( 'is-view' );
   });
 
+  var globalNavigationChildItems = document.getElementsByClassName( 'p-globalNavigation__item' );
+  for( let index = 0; index < globalNavigationChildItems.length; index++ ) {
+    globalNavigationChildItems[index].addEventListener( 'click', function() {
+      globalNavigationChildItems[index].querySelector( '.p-globalNavigation__childContainer' ).classList.toggle( 'is-view' );
+    });
+  }
+
 })();
