@@ -700,6 +700,7 @@ a {
 @media screen and (min-width: 768px) {
   .p-globalNavItem__text--en {
     padding-right: 0;
+    font-weight: 400;
   }
 }
 
