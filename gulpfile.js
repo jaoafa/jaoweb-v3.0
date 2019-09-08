@@ -40,6 +40,10 @@ const paths = {
   image: {
     src:  "./src/img/**/*.{jpg,png,svg,gif}",
     dest: "./dist/img"
+  },
+  asset: {
+    src: "./src/asset/**/*",
+    dest: "./dist/asset"
   }
 };
 
@@ -147,6 +151,15 @@ const minifyImage = () => {
   );
 };
 
+// Copy Asset Files
+const copyAsset = () => {
+  return gulp
+  .src( paths.asset.src )
+  .pipe(
+    gulp.dest( paths.asset.dest )
+  );
+};
+
 // Watch Sass Files
 const watchSass = ( cb ) => {
   gulp
@@ -187,6 +200,16 @@ const watchImage = ( cb ) => {
   cb();
 };
 
+// Watch Asset Files
+const watchAsset = ( cb ) => {
+  gulp
+  .watch(
+    paths.asset.src,
+    gulp.series( copyAsset, reloadBrowser )
+  );
+  cb();
+};
+
 
 // -----------------------------------------------------------------
 // Exports
@@ -198,6 +221,7 @@ exports.build = gulp.series(
     watchSass,
     watchEjs,
     watchJS,
-    watchImage
+    watchImage,
+    watchAsset
   )
 );
