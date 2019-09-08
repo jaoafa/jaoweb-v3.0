@@ -30,6 +30,7 @@
   &--en {
     padding-right: $padding-base;
     font-family: $fontfamily-en;
+    font-weight: 700;
 
     @include bp( md ) {
       padding-right: 0;

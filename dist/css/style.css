@@ -576,6 +576,7 @@ a {
 .p-globalNavItem__text--en {
   padding-right: 8px;
   font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
