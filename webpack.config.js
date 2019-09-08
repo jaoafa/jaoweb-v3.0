@@ -6,7 +6,8 @@
  * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- */
 
 module.exports = {
-  mode  : "production",
+  mode  : "development",
+  devtool: "inline-source-map",
   entry : "./src/js/main.js",
   output: {
     path    : __dirname + "/dist/js",
