@@ -282,8 +282,15 @@ a {
   z-index: 100;
   background: #fff;
   border-bottom: solid 1px #e0e0e0;
-  -webkit-box-shadow: 0 0 8px #e0e0e0;
-  box-shadow: 0 0 8px #e0e0e0;
+  -webkit-box-shadow: 0 0 4px #535353;
+  box-shadow: 0 0 4px #535353;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header {
+    -webkit-box-shadow: 0 0 8px #535353;
+    box-shadow: 0 0 8px #535353;
+  }
 }
 
 .l-header__inner {
@@ -355,7 +362,7 @@ a {
 .p-breadcrumb {
   max-width: 1200px;
   margin: auto;
-  padding: 4px 16px;
+  padding: 6px 16px 4px;
   overflow: hidden;
   white-space: nowrap;
   list-style: none;
@@ -365,7 +372,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .p-breadcrumb {
-    padding: 4px 24px;
+    padding: 6px 24px 4px;
     font-size: 0.8rem;
   }
 }
