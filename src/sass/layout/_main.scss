@@ -12,5 +12,7 @@
 }
 
 .l-main__breadcrumb {
+  position: relative;
+  z-index: 90;
   background: $color-primary;
 }
