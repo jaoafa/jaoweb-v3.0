@@ -2,7 +2,7 @@
 // Object > Project > Global Navigation
 // -----------------------------------------------------------------
 
-.p-globalNavigation__hamburger {
+.p-globalNav__hamburger {
   width: 20px;
   height: 24px;
   position: relative;
@@ -58,7 +58,7 @@
   }
 }
 
-.p-globalNavigation__container {
+.p-globalNav__container {
   max-height: 80vh;
   padding: $padding-x3 0 $padding-x4;
   display: flex;
@@ -93,7 +93,7 @@
   }
 }
 
-.p-globalNavigation__item {
+.p-globalNav__item {
   width: 100%;
   border-bottom: solid 1px transparent;
   transition-duration: .2s;
@@ -109,7 +109,7 @@
   }
 }
 
-.p-globalNavigation__textContainer {
+.p-globalNav__textContainer {
   padding: $padding-base $padding-x2;
   display: block;
   text-align: center;
@@ -126,7 +126,7 @@
   }
 }
 
-.p-globalNavigation__text {
+.p-globalNav__text {
   line-height: 1.5;
   user-select: none;
 
@@ -147,7 +147,7 @@
   }
 }
 
-.p-globalNavigation__childContainer {
+.p-globalNav__childContainer {
   width: 100%;
   height: 0;
   padding: 0 $padding-x2;
@@ -174,7 +174,7 @@
   }
 }
 
-.p-globalNavigation__childItemText {
+.p-globalNav__childItemText {
   padding: $padding-base;
   display: inline-block;
 
