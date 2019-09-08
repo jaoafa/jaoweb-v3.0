@@ -57,13 +57,18 @@
   @include bp( md ) {
     position: absolute;
     left: 0;
-    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 ) + 1px;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 ) + 2px;
     font-size: $fontsize-base;
   }
 
   &.is-view {
     height: auto;
     padding: $padding-x2 $padding-x2;
+
+    @include bp( md ) {
+      border: solid 1px $color-gray-8;
+      border-top-width: 0;
+    }
   }
 }
 

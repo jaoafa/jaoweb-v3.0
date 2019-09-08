@@ -613,7 +613,7 @@ a {
   .p-globalNavItem__accordion {
     position: absolute;
     left: 0;
-    top: 77.26667px;
+    top: 78.26667px;
     font-size: 1rem;
   }
 }
@@ -621,6 +621,13 @@ a {
 .p-globalNavItem__accordion.is-view {
   height: auto;
   padding: 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-globalNavItem__accordion.is-view {
+    border: solid 1px #e0e0e0;
+    border-top-width: 0;
+  }
 }
 
 .p-globalNavItem__accordionItemText {
