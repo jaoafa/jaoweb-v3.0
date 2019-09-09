@@ -24,22 +24,22 @@
 
   &--twitter {
     &:hover {
-      color: #1da1f2;
+      color: $color-brand-twitter;
     }
   }
   &--facebook {
     &:hover {
-      color: #1877f2;
+      color: $color-brand-facebook;
     }
   }
   &--hatena {
     &:hover {
-      color: #008fde;
+      color: $color-brand-hatena;
     }
   }
   &--line {
     &:hover {
-      color: #00c300;
+      color: $color-brand-line;
     }
   }
 }
