@@ -3,13 +3,49 @@
 // -----------------------------------------------------------------
 
 .p-articleShare {
+  display: flex;
+  justify-content: space-around;
+
   @include bp( md ) {
+    display: block;
     position: sticky;
     top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 * 2 ) + $padding-x6;
-
-// 配置確認用
-width: 48px;
-height: 200px;
-background: $color-black;
   }
+}
+
+.p-articleShare__button {
+  width: 40px;
+  height: 40px;
+  margin-bottom: $padding-base;
+  padding: $padding-base;
+  display: block;
+  color: $color-black;
+  transition-duration: .2s;
+
+  &--twitter {
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  &--facebook {
+    &:hover {
+      color: #1877f2;
+    }
+  }
+  &--hatena {
+    &:hover {
+      color: #008fde;
+    }
+  }
+  &--line {
+    &:hover {
+      color: #00c300;
+    }
+  }
+}
+
+.p-articleShare__icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
