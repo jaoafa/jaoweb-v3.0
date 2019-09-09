@@ -30,6 +30,7 @@
   &--en {
     padding-right: $padding-base;
     font-family: $fontfamily-en;
+    font-size: $fontsize-s1;
     font-weight: 700;
 
     @include bp( md ) {
@@ -38,6 +39,7 @@
     }
   }
   &--ja {
+    color: $color-gray-5;
     font-size: $fontsize-s4;
   }
 }
