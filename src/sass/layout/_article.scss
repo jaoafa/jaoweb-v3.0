@@ -7,6 +7,7 @@
   margin: auto;
   padding: $padding-x4 $padding-x2 $padding-x5;
   position: relative;
+  color: $color-gray-1;
 
   @include bp( md ) {
     padding: $padding-x6 $padding-x3 $padding-x8;
