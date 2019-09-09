@@ -345,13 +345,6 @@ a {
   box-shadow: 0 0 4px #535353;
 }
 
-@media screen and (min-width: 768px) {
-  .l-header {
-    -webkit-box-shadow: 0 0 8px #535353;
-    box-shadow: 0 0 8px #535353;
-  }
-}
-
 .l-header__inner {
   max-width: 1200px;
   margin: auto;
