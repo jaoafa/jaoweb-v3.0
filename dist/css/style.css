@@ -277,13 +277,13 @@ a {
 .l-article {
   max-width: 1200px;
   margin: auto;
-  padding: 32px 16px 0;
+  padding: 32px 16px 40px;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .l-article {
-    padding: 48px 24px 0;
+    padding: 48px 24px 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
