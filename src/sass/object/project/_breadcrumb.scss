@@ -45,3 +45,9 @@
     color: $color-gray-1;
   }
 }
+
+.p-breadcrumb__text {
+  &:hover {
+    text-decoration: none;
+  }
+}
