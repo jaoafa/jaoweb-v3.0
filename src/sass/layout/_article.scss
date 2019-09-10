@@ -39,6 +39,7 @@
     margin-right: $padding-x3;
   }
   @include bp( lg ) {
+    height: 100%;
     margin: 0;
     padding-top: $padding-x6;
     position: absolute;

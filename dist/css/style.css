@@ -325,6 +325,7 @@ a {
 
 @media screen and (min-width: 992px) {
   .l-article__share {
+    height: 100%;
     margin: 0;
     padding-top: 48px;
     position: absolute;
