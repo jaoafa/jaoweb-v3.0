@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------
 
 $color-primary: #ffb41d;
-$color-primary-light: $color-primary + 16;
-$color-primary-dark:  $color-primary - 8;
+$color-primary-light: lighten( $color-primary, 10% );
+$color-primary-dark:  darken( $color-primary, 10% );
 
 $color-black: #202020;
 $color-gray-1: #3c3c3c;
