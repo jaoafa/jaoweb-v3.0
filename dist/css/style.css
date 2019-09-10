@@ -413,7 +413,7 @@ a {
   fill: currentColor;
 }
 
-.p-articleShare {
+.p-share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +422,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .p-articleShare {
+  .p-share {
     display: block;
     position: -webkit-sticky;
     position: sticky;
@@ -430,7 +430,7 @@ a {
   }
 }
 
-.p-articleShare__button {
+.p-share__button {
   width: 40px;
   height: 40px;
   margin-bottom: 8px;
@@ -440,23 +440,23 @@ a {
   transition-duration: .2s;
 }
 
-.p-articleShare__button--twitter:hover {
+.p-share__button--twitter:hover {
   color: #1da1f2;
 }
 
-.p-articleShare__button--facebook:hover {
+.p-share__button--facebook:hover {
   color: #1877f2;
 }
 
-.p-articleShare__button--hatena:hover {
+.p-share__button--hatena:hover {
   color: #008fde;
 }
 
-.p-articleShare__button--line:hover {
+.p-share__button--line:hover {
   color: #00c300;
 }
 
-.p-articleShare__icon {
+.p-share__icon {
   width: 100%;
   height: 100%;
   fill: currentColor;

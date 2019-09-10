@@ -2,7 +2,7 @@
 // Object > Project > Article Share
 // -----------------------------------------------------------------
 
-.p-articleShare {
+.p-share {
   display: flex;
   justify-content: space-around;
 
@@ -13,7 +13,7 @@
   }
 }
 
-.p-articleShare__button {
+.p-share__button {
   width: 40px;
   height: 40px;
   margin-bottom: $padding-base;
@@ -43,7 +43,7 @@
   }
 }
 
-.p-articleShare__icon {
+.p-share__icon {
   width: 100%;
   height: 100%;
   fill: currentColor;
