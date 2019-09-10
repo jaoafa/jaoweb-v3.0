@@ -14,6 +14,6 @@
 .l-main__breadcrumb {
   position: relative;
   z-index: 90;
-  // background: $color-primary;
-  background: linear-gradient( to right, $color-primary-light, $color-primary 50%, $color-primary-dark );
+  background: $color-gray-9;
+  border-bottom: solid 1px $color-gray-8;
 }

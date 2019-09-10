@@ -395,8 +395,8 @@ a {
 .l-main__breadcrumb {
   position: relative;
   z-index: 90;
-  background: -webkit-gradient(linear, left top, right top, from(#ffc42d), color-stop(50%, #ffb41d), to(#f7ac15));
-  background: linear-gradient(to right, #ffc42d, #ffb41d 50%, #f7ac15);
+  background: #f0f0f0;
+  border-bottom: solid 1px #e0e0e0;
 }
 
 .c-logo {
