@@ -9,7 +9,7 @@
   @include bp( md ) {
     display: block;
     position: sticky;
-    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 * 2 ) + $padding-x6;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) + $padding-x6;
   }
 }
 

@@ -7,7 +7,7 @@
   margin-top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) - 2px;
 
   @include bp( md ) {
-    margin-top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 * 2 ) - 2px;
+    margin-top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) - 2px;
   }
 }
 

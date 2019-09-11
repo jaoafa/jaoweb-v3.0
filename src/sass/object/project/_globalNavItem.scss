@@ -60,7 +60,7 @@
   @include bp( md ) {
     position: absolute;
     left: 0;
-    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x3 );
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x2 );
     font-size: $fontsize-base;
   }
 

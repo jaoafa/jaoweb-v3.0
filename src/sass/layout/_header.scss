@@ -10,7 +10,6 @@
   z-index: 100;
   background: $color-white;
   border-bottom: solid 1px $color-gray-8;
-  // box-shadow: 0 0 4px $color-gray-3;
 }
 
 .l-header__inner {
@@ -32,7 +31,7 @@
 
   @include bp( md ) {
     width: $width-header-logo-pc;
-    padding: $padding-x3 0;
+    // padding: $padding-x3 0;
   }
 
   &:hover {

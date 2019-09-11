@@ -373,7 +373,6 @@ a {
 @media screen and (min-width: 768px) {
   .l-header__logo {
     width: 224px;
-    padding: 24px 0;
   }
 }
 
@@ -388,7 +387,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .l-main {
-    margin-top: 98.26667px;
+    margin-top: 82.26667px;
   }
 }
 
@@ -426,7 +425,7 @@ a {
     display: block;
     position: -webkit-sticky;
     position: sticky;
-    top: 148.26667px;
+    top: 132.26667px;
   }
 }
 
@@ -723,7 +722,7 @@ a {
   .p-globalNavItem__accordion {
     position: absolute;
     left: 0;
-    top: 76.26667px;
+    top: 68.26667px;
     font-size: 1rem;
   }
 }
