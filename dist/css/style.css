@@ -305,16 +305,9 @@ a {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  padding: 0 16px;
   position: relative;
   height: 1200px;
   background: #e0e0e0;
-}
-
-@media screen and (min-width: 768px) {
-  .l-article__main {
-    padding: 0 24px;
-  }
 }
 
 @media screen and (min-width: 768px) {

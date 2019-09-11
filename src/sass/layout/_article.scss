@@ -22,16 +22,11 @@
   width: 100%;
   max-width: $width-article-max;
   margin: auto;
-  padding: 0 $padding-x2;
   position: relative;
 
   // 表示確認用
   height: 1200px;
   background: $color-gray-8;
-
-  @include bp( md ) {
-    padding: 0 $padding-x3;
-  }
 }
 
 .l-article__share {
