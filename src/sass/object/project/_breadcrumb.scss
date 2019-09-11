@@ -14,7 +14,6 @@
 
   @include bp( md ) {
     padding: ( ( $padding-base / 2 ) + 2px ) $padding-x3 ( $padding-base / 2 );
-    font-size: $fontsize-s2;
   }
 }
 
