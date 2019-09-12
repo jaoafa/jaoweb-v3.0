@@ -314,9 +314,13 @@ a {
   position: relative;
 }
 
+.l-article__share {
+  margin-top: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .l-article__share {
-    margin-right: 24px;
+    margin: 0 24px 0 0;
   }
 }
 

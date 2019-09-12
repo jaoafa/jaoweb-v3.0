@@ -29,8 +29,10 @@
 }
 
 .l-article__share {
+  margin-top: $padding-x3;
+
   @include bp( md ) {
-    margin-right: $padding-x3;
+    margin: 0 $padding-x3 0 0;
   }
   @include bp( lg ) {
     height: 100%;
