@@ -301,13 +301,11 @@ a {
   }
 }
 
-.l-article__main {
+.l-article__contents {
   width: 100%;
   max-width: 800px;
   margin: auto;
   position: relative;
-  height: 1200px;
-  background: #e0e0e0;
 }
 
 @media screen and (min-width: 768px) {
@@ -456,6 +454,11 @@ a {
 
 .p-breadcrumb__text:hover {
   text-decoration: none;
+}
+
+.p-contents {
+  height: 1200px;
+  background: #e0e0e0;
 }
 
 .p-globalNav__hamburger {

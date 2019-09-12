@@ -18,15 +18,11 @@
   }
 }
 
-.l-article__main {
+.l-article__contents {
   width: 100%;
   max-width: $width-article-max;
   margin: auto;
   position: relative;
-
-  // 表示確認用
-  height: 1200px;
-  background: $color-gray-8;
 }
 
 .l-article__share {
