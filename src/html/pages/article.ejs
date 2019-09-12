@@ -5,15 +5,16 @@
   };
 -%>
 <%- include( '../components/_header.ejs', { meta: articleMeta } ) -%>
-<%- include( '../components/_breadcrumb.ejs', { meta: articleMeta } ) -%>
-    <div class="l-main__article">
-      <article class="l-article">
-        <div class="l-article__main">
-          
-        </div>
-        <div class="l-article__share">
-<%- include( '../components/_sharebutton.ejs' ) -%>
-        </div>
-      </article>
+<%- include( '../components/_breadcrumb.ejs', { meta: articleMeta } ) %>
+  <div class="l-main__article">
+  <article class="l-article">
+    <div class="l-article__main">
+      
     </div>
+
+    <div class="l-article__share">
+<%- include( '../components/_sharebutton.ejs' ) -%>
+    </div>
+  </article>
+  </div>
 <%- include( '../components/_footer.ejs' ) -%>
