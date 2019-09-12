@@ -457,8 +457,18 @@ a {
 }
 
 .p-contents {
-  height: 1200px;
-  background: #e0e0e0;
+  letter-spacing: .1em;
+}
+
+.p-contents__title {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__title {
+    font-size: 2rem;
+  }
 }
 
 .p-globalNav__hamburger {

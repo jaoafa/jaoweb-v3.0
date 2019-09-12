@@ -3,6 +3,14 @@
 // -----------------------------------------------------------------
 
 .p-contents {
-  height: 1200px;
-  background: $color-gray-8;
+  letter-spacing: .1em;
+}
+
+.p-contents__title {
+  font-size: $fontsize-l3;
+  line-height: 1.5;
+
+  @include bp( md ) {
+    font-size: $fontsize-l4;
+  }
 }
