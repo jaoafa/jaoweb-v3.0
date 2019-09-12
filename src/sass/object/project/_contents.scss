@@ -14,3 +14,32 @@
     font-size: $fontsize-l4;
   }
 }
+
+.p-contents__meta {
+  padding: $padding-x2 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: $fontsize-s3;
+  letter-spacing: initial;
+
+  @include bp( md ) {
+    font-size: $fontsize-s2;
+  }
+}
+
+.p-contents__author {
+  display: flex;
+  align-items: center;
+}
+
+.p-contents__authorIcon {
+  width: $width-author-icon;
+  margin-right: $padding-base;
+}
+
+.p-contents__authorName {
+  &:hover {
+    text-decoration: none;
+  }
+}

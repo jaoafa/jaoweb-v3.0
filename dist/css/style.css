@@ -487,6 +487,43 @@ a {
   }
 }
 
+.p-contents__meta {
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  font-size: 0.72727rem;
+  letter-spacing: initial;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__meta {
+    font-size: 0.8rem;
+  }
+}
+
+.p-contents__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.p-contents__authorIcon {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.p-contents__authorName:hover {
+  text-decoration: none;
+}
+
 .p-globalNav__hamburger {
   width: 20px;
   height: 24px;
