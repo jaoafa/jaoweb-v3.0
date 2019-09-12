@@ -304,7 +304,7 @@ a {
 .l-article__contents {
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
