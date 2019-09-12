@@ -16,6 +16,9 @@
     justify-content: space-between;
     align-items: stretch;
   }
+  @include bp( lg ) {
+    padding: $padding-x8 $padding-x3 $padding-x10;
+  }
 }
 
 .l-article__contents {
@@ -36,5 +39,8 @@
     position: absolute;
     left: $padding-x3;
     top: 0;
+  }
+  @include bp( md ) {
+    padding-top: $padding-x8;
   }
 }

@@ -301,6 +301,12 @@ a {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .l-article {
+    padding: 64px 24px 80px;
+  }
+}
+
 .l-article__contents {
   width: 100%;
   max-width: 800px;
@@ -322,6 +328,12 @@ a {
     position: absolute;
     left: 24px;
     top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .l-article__share {
+    padding-top: 64px;
   }
 }
 
