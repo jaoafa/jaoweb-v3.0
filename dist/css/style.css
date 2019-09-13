@@ -523,6 +523,12 @@ a {
   padding-right: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-contents__icon {
+    padding-right: 8px;
+  }
+}
+
 .p-globalNav__hamburger {
   width: 20px;
   height: 24px;
