@@ -7,10 +7,10 @@ $width-main-max: 1200px;
 $width-article-max: 800px;
 $width-header-logo-mobile: 120px;
 $width-header-logo-pc: 224px;
-$width-author-icon: 24px;
 
 // Height
 $height-header-mobile: 56px;
+$height-article-meta: 24px;
 
 // Padding
 $padding-base: 8px;
@@ -23,6 +23,9 @@ $padding-x7:  $padding-base * 7;  // 56px;
 $padding-x8:  $padding-base * 8;  // 64px;
 $padding-x9:  $padding-base * 9;  // 72px;
 $padding-x10: $padding-base * 10; // 80px;
+
+// Border
+$border-radius-base: 8px;
 
 // Font Size
 $fontsize-base: 1rem;
