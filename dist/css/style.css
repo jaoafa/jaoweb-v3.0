@@ -264,10 +264,16 @@ html {
 body {
   position: relative;
   color: #202020;
-  font-size: 1rem;
+  font-size: 0.88889rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.75;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -477,6 +483,43 @@ a {
   letter-spacing: .1em;
 }
 
+.p-contents__body {
+  padding: 32px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body {
+    padding: 48px 0;
+  }
+}
+
+.p-contents__body > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body > *:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.p-contents__body h2, .p-contents__body h3, .p-contents__body h4, .p-contents__body h5, .p-contents__body h6 {
+  line-height: 1.25;
+}
+
+.p-contents__body h2 {
+  padding: 16px 0 8px;
+  font-size: 1.6rem;
+  border-bottom: solid 1px #3c3c3c;
+}
+
+.p-contents__body img {
+  width: 100%;
+  display: block;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
 .p-contents__header {
   display: grid;
   grid-template-rows: auto 24px auto;
@@ -542,18 +585,15 @@ a {
   display: block;
 }
 
-.p-contents__eyecatch > img {
+.p-contents__img {
+  width: 100%;
   height: 100%;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.p-contents__img {
-  width: 100%;
-  display: block;
   background: #f0f0f0;
   border-radius: 8px;
 }
