@@ -67,7 +67,7 @@
   list-style: none;
   position: absolute;
   left: 0;
-  top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 );
+  top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) - 2px;
   z-index: 120;
   background: $color-white;
   border-bottom: solid 2px $color-gray-8;
