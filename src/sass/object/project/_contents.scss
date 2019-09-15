@@ -10,8 +10,8 @@
   display: grid;
   grid-template-rows: auto $height-article-meta auto;
   grid-template-columns: auto auto auto 1fr;
-  grid-gap: $padding-base $padding-x2;
-  line-height: 1.5;
+  grid-gap: $padding-x2 $padding-x2;
+  line-height: 1.25;
 }
 
 .p-contents__title {
@@ -49,3 +49,29 @@
   }
 }
 
+.p-contents__eyecatch {
+  grid-row: 3;
+  grid-column: 1 / 5;
+  position: relative;
+
+  &:after {
+    content: "";
+    padding-top: 52.5%;
+    display: block;
+  }
+  
+  & > img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.p-contents__img {
+  width: 100%;
+  display: block;
+  background: $color-gray-9;
+  border-radius: $border-radius-base;
+}

@@ -481,8 +481,8 @@ a {
   display: grid;
   grid-template-rows: auto 24px auto;
   grid-template-columns: auto auto auto 1fr;
-  grid-gap: 8px 16px;
-  line-height: 1.5;
+  grid-gap: 16px 16px;
+  line-height: 1.25;
 }
 
 .p-contents__title {
@@ -528,6 +528,34 @@ a {
   .p-contents__icon {
     padding-right: 8px;
   }
+}
+
+.p-contents__eyecatch {
+  grid-row: 3;
+  grid-column: 1 / 5;
+  position: relative;
+}
+
+.p-contents__eyecatch:after {
+  content: "";
+  padding-top: 52.5%;
+  display: block;
+}
+
+.p-contents__eyecatch > img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.p-contents__img {
+  width: 100%;
+  display: block;
+  background: #f0f0f0;
+  border-radius: 8px;
 }
 
 .p-globalNav__hamburger {
