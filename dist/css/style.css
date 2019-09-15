@@ -513,6 +513,22 @@ a {
   border-bottom: solid 1px #3c3c3c;
 }
 
+.p-contents__body a {
+  color: #535353;
+}
+
+.p-contents__body a[target="_blank"]::after {
+  content: "\f35d";
+  margin-left: 4px;
+  font-size: 0.8rem;
+  font-family: "Font Awesome 5 Free", "fontawesome", sans-serif;
+  font-weight: 600;
+}
+
+.p-contents__body a:hover {
+  text-decoration: none;
+}
+
 .p-contents__body img {
   width: 100%;
   display: block;

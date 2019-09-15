@@ -28,6 +28,21 @@
     font-size: $fontsize-l3;
     border-bottom: solid 1px $color-gray-1;
   }
+  a {
+    color: $color-gray-3;
+    &[target="_blank"] {
+      &::after {
+        content: "\f35d";
+        margin-left: $padding-base / 2;
+        font-size: $fontsize-s2;
+
+        @include ico();
+      }
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
   img {
     width: 100%;
     display: block;
