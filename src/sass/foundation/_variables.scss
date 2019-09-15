@@ -44,3 +44,8 @@ $fontsize-s4: $fontsize-base * 8 / 12;
 $fontfamily-base: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Meiryo','メイリオ','Meiryo UI',sans-serif;
 $fontfamily-en: sofia-pro, $fontfamily-base;
 $fontfamily-ico: "Font Awesome 5 Free", 'fontawesome', sans-serif;
+
+// Font Weight
+$fontweight-base: 500;
+$fontweight-ico: 600;
+$fontweight-bold: 700;

@@ -15,3 +15,8 @@ $breakPoints: (
     @content;
   }
 }
+
+@mixin ico() {
+  font-family: $fontfamily-ico;
+  font-weight: $fontweight-ico;
+}

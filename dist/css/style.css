@@ -453,8 +453,9 @@ a {
 .p-breadcrumb__item:not(:last-child)::after {
   content: "\f105";
   margin: 0 2px 0 4px;
-  font-family: "Font Awesome 5 Free", "fontawesome", sans-serif;
   font-size: 0.66667rem;
+  font-family: "Font Awesome 5 Free", "fontawesome", sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {

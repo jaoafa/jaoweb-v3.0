@@ -31,9 +31,9 @@
     &::after {
       content: "\f105";
       margin: 0 2px 0 4px;
-      font-family: $fontfamily-ico;
       font-size: $fontsize-s4;
 
+      @include ico();
       @include bp( md ) {
         margin: 0 4px 0 6px;
         font-size: $fontsize-s3;

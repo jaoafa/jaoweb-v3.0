@@ -31,7 +31,7 @@
     padding-right: $padding-base;
     font-family: $fontfamily-en;
     font-size: $fontsize-s1;
-    font-weight: 700;
+    font-weight: $fontweight-bold;
 
     @include bp( md ) {
       padding-right: 0;
