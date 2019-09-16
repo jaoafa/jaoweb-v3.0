@@ -568,6 +568,7 @@ a {
   padding: 0 4px;
   background: #e0e0e0;
   border-radius: 4px;
+  word-wrap: break-word;
 }
 
 .p-contents__body a[target="_blank"]::after {
