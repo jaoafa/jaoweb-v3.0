@@ -575,6 +575,10 @@ a {
   font-weight: 700;
 }
 
+.p-contents__body em {
+  font-style: italic;
+}
+
 .p-contents__body a[target="_blank"]::after {
   content: "\f35d";
   font-size: 0.72727rem;
