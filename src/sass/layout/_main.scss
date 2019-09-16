@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------
 
 .l-main {
-  height: 200px;
   margin-top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) - 2px;
 
   @include bp( md ) {

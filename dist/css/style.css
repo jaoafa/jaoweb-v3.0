@@ -349,7 +349,7 @@ a {
 
 .l-footer {
   width: 100%;
-  background: #3c3c3c;
+  background: #202020;
 }
 
 .l-footer__inner {
@@ -360,7 +360,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .l-footer__inner {
-    padding: 0 24px;
+    padding: 16px 24px;
   }
 }
 
@@ -411,7 +411,6 @@ a {
 }
 
 .l-main {
-  height: 200px;
   margin-top: 58px;
 }
 
