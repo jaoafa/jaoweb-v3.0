@@ -259,6 +259,7 @@ audio, canvas, progress, video {
 
 html {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
