@@ -530,6 +530,46 @@ a {
   }
 }
 
+.p-contents__body h4 {
+  padding: 16px 0 0;
+  font-size: 1.14286rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body h4 {
+    font-size: 1.33333rem;
+  }
+}
+
+.p-contents__body h5 {
+  padding: 16px 0 0;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body h5 {
+    font-size: 1.14286rem;
+  }
+}
+
+.p-contents__body h6 {
+  padding: 16px 0 0;
+  font-size: 0.88889rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body h6 {
+    font-size: 1rem;
+  }
+}
+
+.p-contents__body p code {
+  margin: 0 4px;
+  padding: 0 4px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
 .p-contents__body a[target="_blank"]::after {
   content: "\f35d";
   font-size: 0.72727rem;
@@ -546,6 +586,84 @@ a {
   display: block;
   background: #f0f0f0;
   border-radius: 8px;
+}
+
+.p-contents__body ul, .p-contents__body ol {
+  list-style: none;
+  counter-reset: cnt;
+}
+
+.p-contents__body li {
+  position: relative;
+}
+
+.p-contents__body li::before {
+  display: block;
+  position: absolute;
+  left: 8px;
+  background: #ffb41d;
+  border-radius: 50%;
+}
+
+.p-contents__body ul > li {
+  padding-left: 32px;
+}
+
+.p-contents__body ul > li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 0.55556rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body ul > li::before {
+    top: 0.625rem;
+  }
+}
+
+.p-contents__body ol > li {
+  padding-left: 40px;
+}
+
+.p-contents__body ol > li::before {
+  content: counter(cnt);
+  counter-increment: cnt;
+  width: 16px;
+  height: 16px;
+  padding-left: 2px;
+  top: 0.22222rem;
+  font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
+  font-size: 0.66667rem;
+  text-align: center;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body ol > li::before {
+    top: 0.4rem;
+  }
+}
+
+.p-contents__body pre {
+  overflow-x: scroll;
+  padding: 16px 16px;
+  color: #fff;
+  background: #202020;
+  border-radius: 8px;
+  font-family: source-code-pro, monospace;
+  font-size: 0.88889rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body pre {
+    padding: 24px 32px;
+  }
+}
+
+.p-contents__body code {
+  font-family: source-code-pro, monospace;
+  letter-spacing: initial;
 }
 
 .p-contents__header {
