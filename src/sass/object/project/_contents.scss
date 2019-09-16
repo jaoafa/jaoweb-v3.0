@@ -73,6 +73,9 @@
       word-wrap: break-word;
     }
   }
+  b, strong {
+    font-weight: $fontweight-bold;
+  }
   a {
     &[target="_blank"] {
       &::after {

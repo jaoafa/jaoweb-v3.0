@@ -571,6 +571,10 @@ a {
   word-wrap: break-word;
 }
 
+.p-contents__body b, .p-contents__body strong {
+  font-weight: 700;
+}
+
 .p-contents__body a[target="_blank"]::after {
   content: "\f35d";
   font-size: 0.72727rem;
