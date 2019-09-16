@@ -566,7 +566,7 @@ a {
 .p-contents__body p code {
   margin: 0 4px;
   padding: 0 4px;
-  background: #e0e0e0;
+  background: #f0f0f0;
   border-radius: 4px;
   word-wrap: break-word;
 }
@@ -665,6 +665,37 @@ a {
 .p-contents__body code {
   font-family: source-code-pro, monospace;
   letter-spacing: initial;
+}
+
+.p-contents__body blockquote {
+  padding: 16px 16px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body blockquote {
+    padding: 24px 32px;
+  }
+}
+
+.p-contents__body blockquote footer {
+  padding-top: 16px;
+}
+
+.p-contents__body blockquote cite {
+  font-style: normal;
+  font-size: 0.66667rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body blockquote cite {
+    font-size: 0.72727rem;
+  }
+}
+
+.p-contents__body blockquote cite::before {
+  content: "引用元：";
 }
 
 .p-contents__header {

@@ -68,7 +68,7 @@
     code {
       margin: 0 $padding-base / 2;
       padding: 0 $padding-base / 2;
-      background: $color-gray-8;
+      background: $color-gray-9;
       border-radius: $border-radius-base / 2;
       word-wrap: break-word;
     }
@@ -157,6 +157,31 @@
   code {
     font-family: $fontfamily-code;
     letter-spacing: initial;
+  }
+  blockquote {
+    padding: $padding-x2 $padding-x2;
+    background: $color-gray-9;
+    border-radius: $border-radius-base;
+
+    @include bp( md ) {
+      padding: $padding-x3 $padding-x4;
+    }
+
+    footer {
+      padding-top: $padding-x2;
+    }
+    cite {
+      font-style: normal;
+      font-size: $fontsize-s4;
+
+      @include bp( md ) {
+        font-size: $fontsize-s3;
+      }
+
+      &::before {
+        content: "引用元：";
+      }
+    }
   }
 }
 
