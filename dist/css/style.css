@@ -1109,4 +1109,23 @@ a {
   height: 100%;
   fill: currentColor;
 }
+
+.p-toc {
+  padding: 24px 24px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-toc {
+    width: 64%;
+  }
+}
+
+.p-toc__heading {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #727272;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */

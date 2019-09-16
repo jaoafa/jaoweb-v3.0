@@ -1,0 +1,20 @@
+//
+// Object > Project > Table of Contents
+// -----------------------------------------------------------------
+
+.p-toc {
+  padding: $padding-x3 $padding-x3;
+  background: $color-gray-9;
+  border-radius: $border-radius-base;
+
+  @include bp( md ) {
+    width: 64%;
+  }
+}
+
+.p-toc__heading {
+  margin-bottom: $padding-x2;
+  padding-bottom: $padding-base;
+  border-bottom: solid 1px $color-gray-5;
+  font-weight: $fontweight-bold;
+}
