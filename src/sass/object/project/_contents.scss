@@ -25,16 +25,26 @@
   }
   h2 {
     padding: $padding-x2 0 $padding-base;
-    font-size: $fontsize-l3;
+    font-size: $fontsize-l2;
     border-bottom: solid 1px $color-gray-1;
+
+    @include bp( md ) {
+      font-size: $fontsize-l3;
+    }
+  }
+  h3 {
+    padding: $padding-x2 0 0;
+    font-size: $fontsize-l2;
+
+    @include bp( md ) {
+      font-size: $fontsize-l3;
+    }
   }
   a {
-    color: $color-gray-3;
     &[target="_blank"] {
       &::after {
         content: "\f35d";
-        margin-left: $padding-base / 2;
-        font-size: $fontsize-s2;
+        font-size: $fontsize-s3;
 
         @include ico();
       }

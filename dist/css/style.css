@@ -509,18 +509,30 @@ a {
 
 .p-contents__body h2 {
   padding: 16px 0 8px;
-  font-size: 1.6rem;
+  font-size: 1.33333rem;
   border-bottom: solid 1px #3c3c3c;
 }
 
-.p-contents__body a {
-  color: #535353;
+@media screen and (min-width: 768px) {
+  .p-contents__body h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.p-contents__body h3 {
+  padding: 16px 0 0;
+  font-size: 1.33333rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body h3 {
+    font-size: 1.6rem;
+  }
 }
 
 .p-contents__body a[target="_blank"]::after {
   content: "\f35d";
-  margin-left: 4px;
-  font-size: 0.8rem;
+  font-size: 0.72727rem;
   font-family: "Font Awesome 5 Free", "fontawesome", sans-serif;
   font-weight: 600;
 }
