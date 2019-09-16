@@ -698,6 +698,34 @@ a {
   content: "引用元：";
 }
 
+.p-contents__body table {
+  width: 100%;
+  margin: auto;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.p-contents__body table th, .p-contents__body table td {
+  padding: 8px;
+  border: solid 1px #e0e0e0;
+  white-space: nowrap;
+  font-size: 0.72727rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contents__body table th, .p-contents__body table td {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+.p-contents__body table th {
+  background: #f0f0f0;
+  font-weight: 700;
+}
+
 .p-contents__header {
   display: grid;
   grid-template-rows: auto 24px auto;

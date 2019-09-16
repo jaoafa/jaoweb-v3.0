@@ -183,6 +183,30 @@
       }
     }
   }
+  table {
+    width: 100%;
+    margin: auto;
+    display: block;
+    overflow-x: auto;
+    text-align: left;
+    border-collapse: collapse;
+
+    th, td {
+      padding: $padding-base;
+      border: solid 1px $color-gray-8;
+      white-space: nowrap;
+      font-size: $fontsize-s3;
+
+      @include bp( md ) {
+        padding: $padding-base $padding-x2;
+        font-size: $fontsize-s2;
+      }
+    }
+    th {
+      background: $color-gray-9;
+      font-weight: $fontweight-bold;
+    }
+  }
 }
 
 .p-contents__header {
