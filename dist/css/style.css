@@ -347,6 +347,23 @@ a {
   }
 }
 
+.l-footer {
+  width: 100%;
+  background: #3c3c3c;
+}
+
+.l-footer__inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-footer__inner {
+    padding: 0 24px;
+  }
+}
+
 .l-header {
   width: 100%;
   position: fixed;

@@ -1,0 +1,18 @@
+//
+// Layout > Footer
+// -----------------------------------------------------------------
+
+.l-footer {
+  width: 100%;
+  background: $color-gray-1;
+}
+
+.l-footer__inner {
+  max-width: $width-main-max;
+  margin: auto;
+  padding: $padding-x2 $padding-x2;
+
+  @include bp( md ) {
+    padding: 0 $padding-x3;
+  }
+}
