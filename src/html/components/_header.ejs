@@ -85,18 +85,56 @@
               Server
             </span>
             <span class="p-globalNavItem__text p-globalNavItem__text--ja">
-              鯖情報・規則
+              サーバ情報
             </span>
           </div>
           <ul class="p-globalNavItem__accordion">
             <li class="p-globalNavItem__accordionItem">
               <a class="p-globalNavItem__accordionItemText" href="">
-                鯖情報 <i class="far fa-arrow-alt-circle-right"></i>
+                サーバ情報 <i class="far fa-arrow-alt-circle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </li>
+        <li class="p-globalNav__item<% if( pagetype === 'rule' ) { %> is-current<% } %>">
+        <div class="p-globalNavItem">
+          <div class="p-globalNavItem__container" href="">
+            <span class="p-globalNavItem__text p-globalNavItem__text--en">
+              Rule
+            </span>
+            <span class="p-globalNavItem__text p-globalNavItem__text--ja">
+              規則
+            </span>
+          </div>
+          <ul class="p-globalNavItem__accordion">
+            <li class="p-globalNavItem__accordionItem">
+              <a class="p-globalNavItem__accordionItemText" href="">
+                規則 <i class="far fa-arrow-alt-circle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </li>
+        <li class="p-globalNav__item<% if( pagetype === 'community' ) { %> is-current<% } %>">
+        <div class="p-globalNavItem">
+          <div class="p-globalNavItem__container" href="">
+            <span class="p-globalNavItem__text p-globalNavItem__text--en">
+              Community
+            </span>
+            <span class="p-globalNavItem__text p-globalNavItem__text--ja">
+              コミュニティ
+            </span>
+          </div>
+          <ul class="p-globalNavItem__accordion">
+            <li class="p-globalNavItem__accordionItem">
+              <a class="p-globalNavItem__accordionItemText" href="">
+                Discord <i class="far fa-arrow-alt-circle-right"></i>
               </a>
             </li>
             <li class="p-globalNavItem__accordionItem">
               <a class="p-globalNavItem__accordionItemText" href="">
-                規則 <i class="far fa-arrow-alt-circle-right"></i>
+                jaopedia <i class="far fa-arrow-alt-circle-right"></i>
               </a>
             </li>
           </ul>
@@ -126,30 +164,6 @@
             <li class="p-globalNavItem__accordionItem">
               <a class="p-globalNavItem__accordionItemText" href="">
                 ユーザ投稿 <i class="far fa-arrow-alt-circle-right"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </li>
-        <li class="p-globalNav__item<% if( pagetype === 'community' ) { %> is-current<% } %>">
-        <div class="p-globalNavItem">
-          <div class="p-globalNavItem__container" href="">
-            <span class="p-globalNavItem__text p-globalNavItem__text--en">
-              Community
-            </span>
-            <span class="p-globalNavItem__text p-globalNavItem__text--ja">
-              コミュニティ
-            </span>
-          </div>
-          <ul class="p-globalNavItem__accordion">
-            <li class="p-globalNavItem__accordionItem">
-              <a class="p-globalNavItem__accordionItemText" href="">
-                Discord <i class="far fa-arrow-alt-circle-right"></i>
-              </a>
-            </li>
-            <li class="p-globalNavItem__accordionItem">
-              <a class="p-globalNavItem__accordionItemText" href="">
-                jaopedia <i class="far fa-arrow-alt-circle-right"></i>
               </a>
             </li>
           </ul>
