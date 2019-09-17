@@ -239,13 +239,10 @@
   align-items: center;
   font-size: $fontsize-s3;
   letter-spacing: initial;
+  text-decoration: none;
 
   @include bp( md ) {
     font-size: $fontsize-s2;
-  }
-
-  &:hover {
-    text-decoration: none;
   }
 }
 
@@ -255,6 +252,16 @@
 
   @include bp( md ) {
     padding-right: $padding-base;
+  }
+}
+
+.p-contents__author,
+.p-contents__date,
+.p-contents__category {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
   }
 }
 

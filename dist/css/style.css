@@ -781,16 +781,13 @@ a {
   align-items: center;
   font-size: 0.72727rem;
   letter-spacing: initial;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
   .p-contents__meta {
     font-size: 0.8rem;
   }
-}
-
-.p-contents__meta:hover {
-  text-decoration: none;
 }
 
 .p-contents__icon {
@@ -802,6 +799,18 @@ a {
   .p-contents__icon {
     padding-right: 8px;
   }
+}
+
+.p-contents__author,
+.p-contents__date,
+.p-contents__category {
+  text-decoration: underline;
+}
+
+.p-contents__author:hover,
+.p-contents__date:hover,
+.p-contents__category:hover {
+  text-decoration: none;
 }
 
 .p-contents__eyecatch {
