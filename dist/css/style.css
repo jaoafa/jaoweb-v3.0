@@ -525,9 +525,9 @@ a {
 }
 
 .p-contents__body h2 {
-  padding: 16px 0 8px;
+  padding: 16px 0 16px;
   font-size: 1.33333rem;
-  border-bottom: solid 1px #3c3c3c;
+  border-bottom: solid 2px #535353;
 }
 
 @media screen and (min-width: 768px) {
@@ -537,8 +537,9 @@ a {
 }
 
 .p-contents__body h3 {
-  padding: 16px 0 0;
+  padding: 16px 0 16px;
   font-size: 1.33333rem;
+  border-bottom: solid 1px #e0e0e0;
 }
 
 @media screen and (min-width: 768px) {
