@@ -58,7 +58,8 @@ const startSync = ( cb ) => {
     server: {
       baseDir: paths.html.dest,
       index: "index.html"
-    }
+    },
+    notify: false
   });
   cb();
 };
