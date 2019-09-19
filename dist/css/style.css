@@ -802,15 +802,11 @@ a {
   }
 }
 
-.p-contentsHeader__author,
-.p-contentsHeader__date,
-.p-contentsHeader__category {
+.p-contentsHeader__metaBody {
   text-decoration: underline;
 }
 
-.p-contentsHeader__author:hover,
-.p-contentsHeader__date:hover,
-.p-contentsHeader__category:hover {
+.p-contentsHeader__metaBody:hover {
   text-decoration: none;
 }
 
