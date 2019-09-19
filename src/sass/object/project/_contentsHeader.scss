@@ -1,0 +1,77 @@
+//
+// Object > Project > Contents Header
+// -----------------------------------------------------------------
+
+.p-contentsHeader {
+  display: grid;
+  grid-template-rows: auto $height-article-meta auto;
+  grid-template-columns: auto auto auto 1fr;
+  grid-gap: $padding-x2 $padding-x2;
+  line-height: 1.25;
+}
+
+.p-contentsHeader__title {
+  grid-row: 1;
+  grid-column: 1 / 5;
+  font-size: $fontsize-l3;
+
+  @include bp( md ) {
+    font-size: $fontsize-l4;
+  }
+}
+
+.p-contentsHeader__meta {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  font-size: $fontsize-s3;
+  letter-spacing: initial;
+  text-decoration: none;
+
+  @include bp( md ) {
+    font-size: $fontsize-s2;
+  }
+}
+
+.p-contentsHeader__icon {
+  max-width: $height-article-meta;
+  padding-right: $padding-base / 2;
+
+  @include bp( md ) {
+    padding-right: $padding-base;
+  }
+}
+
+.p-contentsHeader__author,
+.p-contentsHeader__date,
+.p-contentsHeader__category {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.p-contentsHeader__eyecatch {
+  grid-row: 3;
+  grid-column: 1 / 5;
+  position: relative;
+
+  &:after {
+    content: "";
+    padding-top: 52.5%;
+    display: block;
+  }
+}
+
+.p-contentsHeader__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background: $color-gray-9;
+  border-radius: $border-radius-base;
+}
