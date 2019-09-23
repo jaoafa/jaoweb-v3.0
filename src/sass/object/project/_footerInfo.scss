@@ -1,0 +1,14 @@
+//
+// Object > Project > Footer Info
+// -----------------------------------------------------------------
+
+.p-footerInfo {
+  padding: $padding-x4 0;
+  color: $color-gray-8;
+  border-top: solid 1px $color-gray-1;
+  text-align: center;
+
+  @include bp( md ) {
+    text-align: left;
+  }
+}
