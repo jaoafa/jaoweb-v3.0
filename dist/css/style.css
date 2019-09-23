@@ -797,6 +797,17 @@ a {
   font-weight: 700;
 }
 
+.p-contentsFooter {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .p-contentsFooter {
+    grid-template-rows: auto;
+    grid-template-columns: 64% 1fr;
+  }
+}
+
 .p-contentsHeader {
   display: grid;
   grid-template-rows: auto 24px auto;

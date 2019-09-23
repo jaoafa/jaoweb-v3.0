@@ -2,4 +2,11 @@
 // Object > Project > Contents Footer
 // -----------------------------------------------------------------
 
+.p-contentsFooter {
+  display: grid;
 
+  @include bp( md ) {
+    grid-template-rows: auto;
+    grid-template-columns: 64% 1fr;
+  }
+}
