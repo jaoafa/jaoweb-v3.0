@@ -27,6 +27,10 @@
   font-size: $fontsize-base;
   font-weight: $fontweight-bold;
   text-overflow: ellipsis;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .p-author__bio {

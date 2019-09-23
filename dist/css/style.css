@@ -470,6 +470,10 @@ a {
   text-overflow: ellipsis;
 }
 
+.p-author__name:hover {
+  text-decoration: none;
+}
+
 .p-author__bio {
   grid-row: 2;
   grid-column: 1 / 3;
