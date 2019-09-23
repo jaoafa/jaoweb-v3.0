@@ -1,0 +1,50 @@
+//
+// Object > Project > Social Media
+// -----------------------------------------------------------------
+
+.p-socialmedia {
+  width: 36px * 3 + 16px * 2;
+  margin-bottom: $padding-x2;
+  display: flex;
+  justify-content: space-between;
+  color: $color-black;
+
+  @include bp( md ) {
+    margin-bottom: 0;
+  }
+}
+
+.p-socialmedia__link {
+  width: 34px;
+  height: 34px;
+  padding: $padding-base;
+  display: block;
+  background: $color-gray-8;
+  border-radius: 50%;
+  transition-duration: .2s;
+
+  &:hover {
+    color: $color-white;
+  }
+  &--discord {
+    &:hover {
+      background: $color-brand-discord;
+    }
+  }
+  &--twitter {
+    &:hover {
+      background: $color-brand-twitter;
+    }
+  }
+  &--instagram {
+    &:hover {
+      background: $color-brand-instagram;
+    }
+  }
+}
+
+.p-socialmedia__icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}

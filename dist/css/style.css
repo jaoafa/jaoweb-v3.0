@@ -865,6 +865,7 @@ a {
 }
 
 .p-copyright {
+  color: #e0e0e0;
   font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
 }
 
@@ -880,14 +881,40 @@ a {
 
 .p-footerInfo {
   padding: 32px 0;
-  color: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-top: solid 1px #3c3c3c;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .p-footerInfo {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     text-align: left;
+  }
+}
+
+.p-footerInfo__copyright {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-footerInfo__copyright {
+    width: auto;
   }
 }
 
@@ -1205,6 +1232,57 @@ a {
 }
 
 .p-share__icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.p-socialmedia {
+  width: 140px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #202020;
+}
+
+@media screen and (min-width: 768px) {
+  .p-socialmedia {
+    margin-bottom: 0;
+  }
+}
+
+.p-socialmedia__link {
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  display: block;
+  background: #e0e0e0;
+  border-radius: 50%;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.p-socialmedia__link:hover {
+  color: #fff;
+}
+
+.p-socialmedia__link--discord:hover {
+  background: #7289da;
+}
+
+.p-socialmedia__link--twitter:hover {
+  background: #1da1f2;
+}
+
+.p-socialmedia__link--instagram:hover {
+  background: #cf2e92;
+}
+
+.p-socialmedia__icon {
   width: 100%;
   height: 100%;
   fill: currentColor;

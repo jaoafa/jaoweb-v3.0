@@ -4,11 +4,24 @@
 
 .p-footerInfo {
   padding: $padding-x4 0;
-  color: $color-gray-8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   border-top: solid 1px $color-gray-1;
   text-align: center;
 
   @include bp( md ) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
     text-align: left;
+  }
+}
+
+.p-footerInfo__copyright {
+  width: 100%;
+
+  @include bp( md ) {
+    width: auto;
   }
 }
