@@ -67,7 +67,7 @@
     }
   }
   b, strong {
-    font-weight: $fontweight-bold;
+    font-weight: $font-weight-bold;
   }
   em {
     font-style: italic;
@@ -203,7 +203,7 @@
     }
     th {
       background: $color-gray-9;
-      font-weight: $fontweight-bold;
+      font-weight: $font-weight-bold;
     }
   }
 }
