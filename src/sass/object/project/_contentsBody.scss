@@ -17,44 +17,44 @@
   }
   h2 {
     padding: $padding-x2 0 $padding-x2;
-    font-size: $fontsize-l2;
+    font-size: $font-size-l2;
     border-bottom: solid 2px $color-gray-3;
 
     @include bp( md ) {
-      font-size: $fontsize-l3;
+      font-size: $font-size-l3;
     }
   }
   h3 {
     padding: $padding-x2 0 $padding-x2;
-    font-size: $fontsize-l2;
+    font-size: $font-size-l2;
     border-bottom: solid 1px $color-gray-8;
 
     @include bp( md ) {
-      font-size: $fontsize-l3;
+      font-size: $font-size-l3;
     }
   }
   h4 {
     padding: $padding-x2 0 0;
-    font-size: $fontsize-l1;
+    font-size: $font-size-l1;
 
     @include bp( md ) {
-      font-size: $fontsize-l2;
+      font-size: $font-size-l2;
     }
   }
   h5 {
     padding: $padding-x2 0 0;
-    font-size: $fontsize-base;
+    font-size: $font-size-base;
 
     @include bp( md ) {
-      font-size: $fontsize-l1;
+      font-size: $font-size-l1;
     }
   }
   h6 {
     padding: $padding-x2 0 0;
-    font-size: $fontsize-s1;
+    font-size: $font-size-s1;
 
     @include bp( md ) {
-      font-size: $fontsize-base;
+      font-size: $font-size-base;
     }
   }
   p {
@@ -76,7 +76,7 @@
     &[target="_blank"] {
       &::after {
         content: "\f35d";
-        font-size: $fontsize-s3;
+        font-size: $font-size-s3;
 
         @include ico();
       }
@@ -113,10 +113,10 @@
       content: "";
       width: $padding-base;
       height: $padding-base;
-      top: $fontsize-s1 / 1.6;
+      top: $font-size-s1 / 1.6;
 
       @include bp( md ) {
-        top: $fontsize-base / 1.6;
+        top: $font-size-base / 1.6;
       }
     }
   }
@@ -129,14 +129,14 @@
       width: $padding-x2;
       height: $padding-x2;
       padding-left: $padding-base / 4;
-      top: $fontsize-s1 / 4;
+      top: $font-size-s1 / 4;
       font-family: $fontfamily-en;
-      font-size: $fontsize-s4;
+      font-size: $font-size-s4;
       text-align: center;
       line-height: $padding-x2;
 
       @include bp( md ) {
-        top: $fontsize-base / 2.5;
+        top: $font-size-base / 2.5;
       }
     }
   }
@@ -147,7 +147,7 @@
     background: $color-black;
     border-radius: $border-radius-base;
     font-family: $fontfamily-code;
-    font-size: $fontsize-s1;
+    font-size: $font-size-s1;
     
     @include bp( md ) {
       padding: $padding-x3 $padding-x4;
@@ -171,10 +171,10 @@
     }
     cite {
       font-style: normal;
-      font-size: $fontsize-s4;
+      font-size: $font-size-s4;
 
       @include bp( md ) {
-        font-size: $fontsize-s3;
+        font-size: $font-size-s3;
       }
 
       &::before {
@@ -194,11 +194,11 @@
       padding: $padding-base;
       border: solid 1px $color-gray-8;
       white-space: nowrap;
-      font-size: $fontsize-s3;
+      font-size: $font-size-s3;
 
       @include bp( md ) {
         padding: $padding-base $padding-x2;
-        font-size: $fontsize-s2;
+        font-size: $font-size-s2;
       }
     }
     th {

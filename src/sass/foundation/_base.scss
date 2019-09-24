@@ -11,13 +11,13 @@ html {
 body {
   position: relative;
   color: $color-black;
-  font-size: $fontsize-s1;
+  font-size: $font-size-s1;
   font-weight: 500;
   font-style: normal;
   line-height: 1.75;
 
   @include bp( md ) {
-    font-size: $fontsize-base;
+    font-size: $font-size-base;
   }
 }
 a {

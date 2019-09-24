@@ -10,7 +10,7 @@
   white-space: nowrap;
   list-style: none;
   text-overflow: ellipsis;
-  font-size: $fontsize-s3;
+  font-size: $font-size-s3;
 
   @include bp( md ) {
     padding: ( ( $padding-base / 2 ) + 2px ) $padding-x3 ( $padding-base / 2 );
@@ -31,12 +31,12 @@
     &::after {
       content: "\f105";
       margin: 0 2px 0 4px;
-      font-size: $fontsize-s4;
+      font-size: $font-size-s4;
 
       @include ico();
       @include bp( md ) {
         margin: 0 4px 0 6px;
-        font-size: $fontsize-s3;
+        font-size: $font-size-s3;
       }
     }
   }

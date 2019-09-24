@@ -13,10 +13,10 @@
 .p-contentsHeader__title {
   grid-row: 1;
   grid-column: 1 / 5;
-  font-size: $fontsize-l3;
+  font-size: $font-size-l3;
 
   @include bp( md ) {
-    font-size: $fontsize-l4;
+    font-size: $font-size-l4;
   }
 }
 

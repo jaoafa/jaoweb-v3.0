@@ -30,7 +30,7 @@
   &--en {
     padding-right: $padding-base;
     font-family: $fontfamily-en;
-    font-size: $fontsize-s1;
+    font-size: $font-size-s1;
     font-weight: $fontweight-bold;
 
     @include bp( md ) {
@@ -39,7 +39,7 @@
   }
   &--ja {
     color: $color-gray-5;
-    font-size: $fontsize-s4;
+    font-size: $font-size-s4;
   }
 }
 
@@ -54,14 +54,14 @@
   list-style: none;
   color: $color-gray-3;
   background: $color-gray-9;
-  font-size: $fontsize-s1;
+  font-size: $font-size-s1;
   transition-duration: .2s;
 
   @include bp( md ) {
     position: absolute;
     left: 0;
     top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x2 );
-    font-size: $fontsize-base;
+    font-size: $font-size-base;
   }
 
   &.is-view {

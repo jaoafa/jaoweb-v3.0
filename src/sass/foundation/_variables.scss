@@ -28,18 +28,23 @@ $padding-x10: $padding-base * 10; // 80px;
 // Border
 $border-radius-base: 8px;
 
+
+// --------------------------
+// Font
+// --------------------------
+
 // Font Size
-$fontsize-base: 1rem;
-$fontsize-l6: $fontsize-base * 8 / 2;
-$fontsize-l5: $fontsize-base * 8 / 3;
-$fontsize-l4: $fontsize-base * 8 / 4;
-$fontsize-l3: $fontsize-base * 8 / 5;
-$fontsize-l2: $fontsize-base * 8 / 6;
-$fontsize-l1: $fontsize-base * 8 / 7;
-$fontsize-s1: $fontsize-base * 8 / 9;
-$fontsize-s2: $fontsize-base * 8 / 10;
-$fontsize-s3: $fontsize-base * 8 / 11;
-$fontsize-s4: $fontsize-base * 8 / 12;
+$font-size-base: 1rem;
+$font-size-l6: $font-size-base * 8 / 2;
+$font-size-l5: $font-size-base * 8 / 3;
+$font-size-l4: $font-size-base * 8 / 4;
+$font-size-l3: $font-size-base * 8 / 5;
+$font-size-l2: $font-size-base * 8 / 6;
+$font-size-l1: $font-size-base * 8 / 7;
+$font-size-s1: $font-size-base * 8 / 9;
+$font-size-s2: $font-size-base * 8 / 10;
+$font-size-s3: $font-size-base * 8 / 11;
+$font-size-s4: $font-size-base * 8 / 12;
 
 // Font Family
 $fontfamily-base: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Meiryo','メイリオ','Meiryo UI',sans-serif;

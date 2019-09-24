@@ -8,9 +8,9 @@
 }
 
 .p-copyright__text {
-  font-size: $fontsize-s3;
+  font-size: $font-size-s3;
 
   @include bp( md ) {
-    font-size: $fontsize-s2;
+    font-size: $font-size-s2;
   }
 }
