@@ -47,10 +47,10 @@ $font-size-s3: $font-size-base * 8 / 11;
 $font-size-s4: $font-size-base * 8 / 12;
 
 // Font Family
-$fontfamily-base: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Meiryo','メイリオ','Meiryo UI',sans-serif;
-$fontfamily-en: sofia-pro, $fontfamily-base;
-$fontfamily-ico: "Font Awesome 5 Free", 'fontawesome', sans-serif;
-$fontfamily-code: source-code-pro, monospace; 
+$font-family-base: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','Meiryo','メイリオ','Meiryo UI',sans-serif;
+$font-family-en: sofia-pro, $font-family-base;
+$font-family-ico: "Font Awesome 5 Free", 'fontawesome', sans-serif;
+$font-family-code: source-code-pro, monospace;
 
 // Font Weight
 $fontweight-base: 500;

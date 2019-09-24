@@ -130,7 +130,7 @@
       height: $padding-x2;
       padding-left: $padding-base / 4;
       top: $font-size-s1 / 4;
-      font-family: $fontfamily-en;
+      font-family: $font-family-en;
       font-size: $font-size-s4;
       text-align: center;
       line-height: $padding-x2;
@@ -146,7 +146,7 @@
     color: $color-white;
     background: $color-black;
     border-radius: $border-radius-base;
-    font-family: $fontfamily-code;
+    font-family: $font-family-code;
     font-size: $font-size-s1;
     
     @include bp( md ) {
@@ -154,7 +154,7 @@
     }
   }
   code {
-    font-family: $fontfamily-code;
+    font-family: $font-family-code;
     letter-spacing: initial;
   }
   blockquote {
