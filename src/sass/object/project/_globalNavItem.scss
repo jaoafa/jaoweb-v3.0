@@ -55,7 +55,7 @@
   color: $color-gray-3;
   background: $color-gray-9;
   font-size: $font-size-s1;
-  transition-duration: .2s;
+  transition-duration: $transition-duration-base;
 
   @include bp( md ) {
     position: absolute;

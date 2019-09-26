@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     background: $color-black;
-    transition-duration: .2s;
+    transition-duration: $transition-duration-base;
 
     &::before, &::after {
       content: "";
@@ -33,7 +33,7 @@
       left: 0;
       right: 0;
       background: $color-black;
-      transition-duration: .2s;
+      transition-duration: $transition-duration-base;
     }
     &::before {
       transform: translateY( -6px );
@@ -74,7 +74,7 @@
   pointer-events: none;
   opacity: 0;
   transform: translateY( -16px );
-  transition-duration: .2s;
+  transition-duration: $transition-duration-base;
 
   @include bp( md ) {
     padding: 0;
@@ -96,7 +96,7 @@
 .p-globalNav__item {
   width: 100%;
   border-bottom: solid 1px transparent;
-  transition-duration: .2s;
+  transition-duration: $transition-duration-base;
 
   @include bp( md ) {
     width: auto;

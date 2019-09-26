@@ -937,8 +937,8 @@ a {
   left: 0;
   right: 0;
   background: #202020;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .p-globalNav__hamburger span::before, .p-globalNav__hamburger span::after {
@@ -952,8 +952,8 @@ a {
   left: 0;
   right: 0;
   background: #202020;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .p-globalNav__hamburger span::before {
@@ -1006,8 +1006,8 @@ a {
   opacity: 0;
   -webkit-transform: translateY(-16px);
   transform: translateY(-16px);
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -1033,8 +1033,8 @@ a {
 .p-globalNav__item {
   width: 100%;
   border-bottom: solid 1px transparent;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -1117,8 +1117,8 @@ a {
   color: #535353;
   background: #f0f0f0;
   font-size: 0.88889rem;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -1211,8 +1211,8 @@ a {
   margin-bottom: 8px;
   padding: 8px;
   display: block;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .p-share__button--twitter:hover {
@@ -1262,8 +1262,8 @@ a {
   display: block;
   background: #e0e0e0;
   border-radius: 50%;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .p-socialmedia__link:hover {

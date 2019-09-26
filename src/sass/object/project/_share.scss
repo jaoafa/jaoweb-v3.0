@@ -19,7 +19,7 @@
   margin-bottom: $padding-base;
   padding: $padding-base;
   display: block;
-  transition-duration: .2s;
+  transition-duration: $transition-duration-base;
 
   &--twitter {
     &:hover {
