@@ -558,6 +558,8 @@ a {
 
 .p-contentsBody {
   display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: row;
   gap: 24px 0;
 }
 

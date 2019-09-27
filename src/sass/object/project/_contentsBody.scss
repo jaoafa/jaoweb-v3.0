@@ -4,6 +4,8 @@
 
 .p-contentsBody {
   display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: row;
   gap: $size-gap-base*3 0;
 
   @include bp( md ) {
