@@ -556,13 +556,14 @@ a {
   }
 }
 
-.p-contentsBody > *:not(:last-child) {
-  margin-bottom: 24px;
+.p-contentsBody {
+  display: grid;
+  gap: 24px 0;
 }
 
 @media screen and (min-width: 768px) {
-  .p-contentsBody > *:not(:last-child) {
-    margin-bottom: 40px;
+  .p-contentsBody {
+    gap: 40px 0;
   }
 }
 
