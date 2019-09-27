@@ -60,14 +60,14 @@
 
 .p-globalNav__container {
   max-height: 80vh;
-  padding: $padding-x3 0 $padding-x4;
+  padding: $size-gap-base*3 0 $size-gap-base*4;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
   list-style: none;
   position: absolute;
   left: 0;
-  top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) - 2px;
+  top: ( $width-header-logo-mobile * ( 7 / 30 ) ) + ( $size-gap-base*2 * 2 ) - 2px;
   z-index: 120;
   background: $color-white;
   border-bottom: solid 2px $color-gray-8;

@@ -15,23 +15,23 @@
 .l-header__inner {
   max-width: $width-main-max;
   margin: auto;
-  padding: 0 $padding-x2;
+  padding: 0 $size-gap-base*2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include bp( md ) {
-    padding: 0 $padding-x3;
+    padding: 0 $size-gap-base*3;
   }
 }
 
 .l-header__logo {
   width: $width-header-logo-mobile;
-  padding: $padding-x2 0;
+  padding: $size-gap-base*2 0;
 
   @include bp( md ) {
     width: $width-header-logo-pc;
-    // padding: $padding-x3 0;
+    // padding: $size-gap-base*3 0;
   }
 
   &:hover {

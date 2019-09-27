@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------
 
 .p-toc {
-  padding: $padding-x3 $padding-x3;
+  padding: $size-gap-base*3 $size-gap-base*3;
   background: $color-gray-9;
   border-radius: $border-radius-base;
 
@@ -13,8 +13,8 @@
 }
 
 .p-toc__heading {
-  margin-bottom: $padding-x2;
-  padding-bottom: $padding-base;
+  margin-bottom: $size-gap-base*2;
+  padding-bottom: $size-gap-base;
   border-bottom: solid 1px $color-gray-5;
   font-weight: $font-weight-bold;
 }

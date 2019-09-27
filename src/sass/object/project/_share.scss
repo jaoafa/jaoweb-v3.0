@@ -9,15 +9,15 @@
   @include bp( md ) {
     display: block;
     position: sticky;
-    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $padding-x2 * 2 ) + $padding-x6;
+    top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $size-gap-base*2 * 2 ) + $size-gap-base*6;
   }
 }
 
 .p-share__button {
   width: 40px;
   height: 40px;
-  margin-bottom: $padding-base;
-  padding: $padding-base;
+  margin-bottom: $size-gap-base;
+  padding: $size-gap-base;
   display: block;
   transition-duration: $transition-duration-base;
 

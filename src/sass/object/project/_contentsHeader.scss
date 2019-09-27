@@ -6,7 +6,7 @@
   display: grid;
   grid-template-rows: auto $height-article-meta auto;
   grid-template-columns: auto auto auto 1fr;
-  grid-gap: $padding-x2 $padding-x2;
+  grid-gap: $size-gap-base*2 $size-gap-base*2;
   line-height: 1.25;
 }
 

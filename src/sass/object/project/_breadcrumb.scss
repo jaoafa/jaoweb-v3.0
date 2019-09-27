@@ -5,7 +5,7 @@
 .p-breadcrumb {
   max-width: $width-main-max;
   margin: auto;
-  padding: ( ( $padding-base / 2 ) + 2px ) $padding-x2 ( $padding-base / 2 );
+  padding: ( ( $size-gap-base / 2 ) + 2px ) $size-gap-base*2 ( $size-gap-base / 2 );
   overflow: hidden;
   white-space: nowrap;
   list-style: none;
@@ -13,7 +13,7 @@
   font-size: $font-size-s3;
 
   @include bp( md ) {
-    padding: ( ( $padding-base / 2 ) + 2px ) $padding-x3 ( $padding-base / 2 );
+    padding: ( ( $size-gap-base / 2 ) + 2px ) $size-gap-base*3 ( $size-gap-base / 2 );
   }
 }
 

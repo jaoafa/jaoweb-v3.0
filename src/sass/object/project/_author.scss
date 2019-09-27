@@ -3,11 +3,11 @@
 // -----------------------------------------------------------------
 
 .p-author {
-  padding: $padding-x4 $padding-x3;
+  padding: $size-gap-base*4 $size-gap-base*3;
   display: grid;
   grid-template-rows: auto $width-author-icon auto;
   grid-template-columns: $width-author-icon 1fr;
-  grid-gap: $padding-x2 $padding-x2;
+  grid-gap: $size-gap-base*2 $size-gap-base*2;
   align-items: center;
   background: $color-gray-9;
   border-radius: $border-radius-base;

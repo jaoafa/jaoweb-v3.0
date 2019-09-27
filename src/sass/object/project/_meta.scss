@@ -16,10 +16,10 @@
 
 .p-meta__icon {
   max-width: $height-article-meta;
-  padding-right: $padding-base / 2;
+  padding-right: $size-gap-base / 2;
 
   @include bp( md ) {
-    padding-right: $padding-base;
+    padding-right: $size-gap-base;
   }
 }
 

@@ -7,9 +7,9 @@
 }
 
 .p-contents__body {
-  padding: $padding-x4 0;
+  padding: $size-gap-base*4 0;
   
   @include bp( md ) {
-    padding: $padding-x6 0;
+    padding: $size-gap-base*6 0;
   }
 }

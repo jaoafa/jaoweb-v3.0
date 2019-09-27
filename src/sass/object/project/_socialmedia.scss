@@ -4,7 +4,7 @@
 
 .p-socialmedia {
   width: 36px * 3 + 16px * 2;
-  margin-bottom: $padding-x2;
+  margin-bottom: $size-gap-base*2;
   display: flex;
   justify-content: space-between;
   color: $color-black;
@@ -17,7 +17,7 @@
 .p-socialmedia__link {
   width: 34px;
   height: 34px;
-  padding: $padding-base;
+  padding: $size-gap-base;
   display: block;
   background: $color-gray-8;
   border-radius: 50%;
