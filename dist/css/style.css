@@ -1218,7 +1218,7 @@ a {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .p-invite__heading {
     font-size: 1rem;
   }
@@ -1237,7 +1237,7 @@ a {
   transition-duration: 0.2s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .p-invite__button {
     font-size: 1rem;
   }

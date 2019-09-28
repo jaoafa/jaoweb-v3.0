@@ -10,7 +10,7 @@
   margin-bottom: $size-gap-base*2;
   font-size: $font-size-s2;
 
-  @include bp( md ) {
+  @include bp( sm ) {
     font-size: $font-size-base;
   }
 }
@@ -26,7 +26,7 @@
   font-weight: $font-weight-bold;
   transition-duration: $transition-duration-base;
 
-  @include bp( md ) {
+  @include bp( sm ) {
     font-size: $font-size-base;
   }
 
