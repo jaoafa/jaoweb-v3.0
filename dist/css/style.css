@@ -921,6 +921,35 @@ a {
   }
 }
 
+.p-footerNav {
+  padding: 48px 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-footerNav {
+    padding: 64px 0;
+    grid-template-columns: 32% 32% 36%;
+  }
+}
+
+.p-footerNav__logo {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .p-footerNav__logo {
+    grid-column: 1;
+  }
+}
+
+.p-footerNav__logo:hover {
+  color: #e0e0e0;
+}
+
 .p-globalNav__hamburger {
   width: 20px;
   height: 24px;

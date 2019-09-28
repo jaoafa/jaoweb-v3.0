@@ -1,0 +1,29 @@
+//
+// Object > Project > Footer Navigation
+// -----------------------------------------------------------------
+
+.p-footerNav {
+  padding: $size-gap-base*6 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+
+  @include bp( md ) {
+    padding: $size-gap-base*8 0;
+    grid-template-columns: 32% 32% 36%;
+  }
+}
+
+.p-footerNav__logo {
+  transition-duration: $transition-duration-base;
+
+  @include bp( md ) {
+    grid-column: 1;
+  }
+
+  &:hover {
+    color: $color-gray-8;
+  }
+}
+
+
