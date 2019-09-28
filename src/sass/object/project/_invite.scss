@@ -1,0 +1,37 @@
+//
+// Object > Project > Invite
+// -----------------------------------------------------------------
+
+.p-invite {
+  text-align: center;
+}
+
+.p-invite__heading {
+  margin-bottom: $size-gap-base*2;
+  font-size: $font-size-s2;
+
+  @include bp( md ) {
+    font-size: $font-size-base;
+  }
+}
+
+.p-invite__button {
+  display: inline-block;
+  color: $color-gray-1;
+  background: $color-primary;
+  border: solid 2px $color-primary;
+  border-radius: $border-radius-base;
+  font-family: $font-family-en;
+  font-size: $font-size-s1;
+  font-weight: $font-weight-bold;
+  transition-duration: $transition-duration-base;
+
+  @include bp( md ) {
+    font-size: $font-size-base;
+  }
+
+  &:hover {
+    color: $color-white;
+    background: transparent;
+  }
+}

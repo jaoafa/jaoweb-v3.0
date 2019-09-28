@@ -1,0 +1,16 @@
+//
+// Object > Component > Button
+// -----------------------------------------------------------------
+
+.c-button {
+  width: 100%;
+  padding: $size-gap-base $size-gap-base*2;
+  display: block;
+  appearance: none;
+  color: inherit;
+  background: transparent;
+  border-radius: $border-radius-base;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
