@@ -1376,6 +1376,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .p-share {
+    padding-bottom: 80px;
     display: block;
     position: -webkit-sticky;
     position: sticky;
