@@ -309,7 +309,7 @@ a {
 
 @media screen and (min-width: 992px) {
   .l-article {
-    padding: 64px 24px 80px;
+    padding: 56px 24px 128px;
   }
 }
 
@@ -1376,7 +1376,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .p-share {
-    padding-bottom: 80px;
+    padding-bottom: 128px;
     display: block;
     position: -webkit-sticky;
     position: sticky;

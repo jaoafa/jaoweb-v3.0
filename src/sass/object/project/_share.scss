@@ -7,7 +7,7 @@
   justify-content: space-around;
 
   @include bp( md ) {
-    padding-bottom: $size-gap-base*10;
+    padding-bottom: $size-gap-base*16;
     display: block;
     position: sticky;
     top: ( $width-header-logo-pc * ( 7 / 30 ) ) + ( $size-gap-base*2 * 2 ) + $size-gap-base*6;

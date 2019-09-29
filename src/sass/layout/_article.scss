@@ -17,7 +17,7 @@
     align-items: stretch;
   }
   @include bp( lg ) {
-    padding: $size-gap-base*8 $size-gap-base*3 $size-gap-base*10;
+    padding: $size-gap-base*7 $size-gap-base*3 $size-gap-base*16;
   }
 }
 
