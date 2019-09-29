@@ -3,11 +3,12 @@
 // -----------------------------------------------------------------
 
 .p-invite {
-  text-align: center;
+  display: grid;
+  gap: $size-gap-base*4;
+  justify-items: center;
 }
 
 .p-invite__heading {
-  margin-bottom: $size-gap-base*2;
   font-size: $font-size-s2;
 
   @include bp( sm ) {
@@ -15,8 +16,20 @@
   }
 }
 
-.p-invite__button {
+.p-invite__feature {
   display: inline-block;
+  list-style: none;
+}
+
+.p-invite__featureItem {
+  .fa-check-circle {
+    color: $color-success;
+  }
+}
+
+.p-invite__button {
+  width: 64%;
+  max-width: 320px;
   color: $color-gray-1;
   background: $color-primary;
   border: solid 2px $color-primary;
@@ -26,7 +39,7 @@
   font-weight: $font-weight-bold;
   transition-duration: $transition-duration-base;
 
-  @include bp( sm ) {
+  @include bp( lg ) {
     font-size: $font-size-base;
   }
 

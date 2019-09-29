@@ -1210,11 +1210,12 @@ a {
 }
 
 .p-invite {
-  text-align: center;
+  display: grid;
+  gap: 32px;
+  justify-items: center;
 }
 
 .p-invite__heading {
-  margin-bottom: 16px;
   font-size: 0.8rem;
 }
 
@@ -1224,8 +1225,18 @@ a {
   }
 }
 
-.p-invite__button {
+.p-invite__feature {
   display: inline-block;
+  list-style: none;
+}
+
+.p-invite__featureItem .fa-check-circle {
+  color: #73ee87;
+}
+
+.p-invite__button {
+  width: 64%;
+  max-width: 320px;
   color: #3c3c3c;
   background: #ffb41d;
   border: solid 2px #ffb41d;
@@ -1237,7 +1248,7 @@ a {
   transition-duration: 0.2s;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .p-invite__button {
     font-size: 1rem;
   }
