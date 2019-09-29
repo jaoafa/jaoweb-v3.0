@@ -1,0 +1,53 @@
+//
+// Object > Project > Footer Navigation
+// -----------------------------------------------------------------
+
+.p-footerNav {
+  padding: 0 $size-gap-base*2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  @include bp( md ) {
+    padding: 0 $size-gap-base*4;
+  }
+}
+
+.p-footerNav__item {
+  width: 48%;
+  margin-bottom: $size-gap-base*2;
+
+  @include bp( md ) {
+    width: 40%;
+  }
+}
+
+.p-footerNav__heading {
+  padding-left: $size-gap-base;
+  border-left: solid 4px $color-gray-5;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-en;
+}
+
+.p-footerNav__child {
+  padding-left: $size-gap-base*1.5;
+  list-style: none;
+  font-size: $font-size-s2;
+
+  @include bp( md ) {
+    font-size: $font-size-s1;
+  }
+}
+
+.p-footerNav__childItem {
+  margin-top: $size-gap-base;
+}
+
+.p-footerNav__link {
+  color: $color-gray-8;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

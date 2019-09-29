@@ -5,16 +5,16 @@
 .p-footerMain {
   padding: $size-gap-base*6 0;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 100%;
-  gap: $size-gap-base*8 0;
+  gap: $size-gap-base*4 0;
   align-items: start;
 
   @include bp( md ) {
     padding: $size-gap-base*8 0;
     grid-template-rows: auto;
     grid-template-columns: 32% 1fr 32%;
-    gap: 0 $size-gap-base*2;
+    gap: 0 $size-gap-base*4;
   }
 }
 

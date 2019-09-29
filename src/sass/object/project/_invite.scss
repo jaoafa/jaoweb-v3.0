@@ -4,8 +4,12 @@
 
 .p-invite {
   display: grid;
-  gap: $size-gap-base*4;
+  gap: $size-gap-base*2;
   justify-items: center;
+
+  @include bp( md ) {
+    gap: $size-gap-base*4;
+  }
 }
 
 .p-invite__heading {
