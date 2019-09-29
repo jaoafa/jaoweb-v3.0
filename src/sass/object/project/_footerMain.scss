@@ -1,8 +1,8 @@
 //
-// Object > Project > Footer Navigation
+// Object > Project > Footer Main
 // -----------------------------------------------------------------
 
-.p-footerNav {
+.p-footerMain {
   padding: $size-gap-base*6 0;
   display: grid;
   grid-template-rows: auto auto;
@@ -18,7 +18,7 @@
   }
 }
 
-.p-footerNav__logo {
+.p-footerMain__logo {
   transition-duration: $transition-duration-base;
 
   @include bp( md ) {
@@ -31,7 +31,7 @@
   }
 }
 
-.p-footerNav__invite {
+.p-footerMain__invite {
   @include bp( md ) {
     grid-row: 1;
     grid-column: 3;
