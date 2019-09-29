@@ -7,7 +7,7 @@
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 100%;
-  gap: $size-gap-base*4 0;
+  gap: $size-gap-base*7 0;
   align-items: start;
 
   @include bp( md ) {

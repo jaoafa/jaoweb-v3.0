@@ -941,7 +941,7 @@ a {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 100%;
-  gap: 32px 0;
+  gap: 56px 0;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
