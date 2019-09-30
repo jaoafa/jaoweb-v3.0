@@ -5,8 +5,9 @@
  *      ==============================================================      *
  * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- * -- */
 
-const browsersync       = require( "browser-sync" );
 const gulp              = require( "gulp" );
+const fs                = require( "fs" );
+const browsersync       = require( "browser-sync" );
 const sass              = require( "gulp-sass" );
 const postcss           = require( "gulp-postcss" );
 const autoprefixer      = require( "autoprefixer" );
@@ -25,7 +26,8 @@ const paths = {
     src: {
       all:        "./src/html/**/*.ejs",
       components: "./src/html/components/**/*.ejs",
-      pages:      "./src/html/pages/**/!(_)*.ejs"
+      pages:      "./src/html/pages/**/!(_)*.ejs",
+      json:       "./src/html/data.json"
     },
     dest: "./dist"
   },
@@ -95,10 +97,11 @@ const compileSass = () => {
 
 // Compile EJS Files
 const compileEjs = () => {
+  let json = JSON.parse( fs.readFileSync( paths.html.src.json ) );
   return gulp
   .src( paths.html.src.pages )
   .pipe(
-    ejs()
+    ejs({ json: json })
   )
   .pipe(
     rename({ extname: ".html" })
