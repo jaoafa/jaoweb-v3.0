@@ -1009,6 +1009,37 @@ a {
   }
 }
 
+.p-footerNavItem__heading {
+  padding-left: 8px;
+  border-left: solid 4px #727272;
+  font-weight: 700;
+  font-family: sofia-pro, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Meiryo", "メイリオ", "Meiryo UI", sans-serif;
+}
+
+.p-footerNavItem__child {
+  padding-left: 12px;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-footerNavItem__child {
+    font-size: 0.88889rem;
+  }
+}
+
+.p-footerNavItem__childItem {
+  margin-top: 8px;
+}
+
+.p-footerNavItem__link {
+  color: #e0e0e0;
+}
+
+.p-footerNavItem__link:hover {
+  text-decoration: none;
+}
+
 .p-globalNav__hamburger {
   width: 20px;
   height: 24px;
