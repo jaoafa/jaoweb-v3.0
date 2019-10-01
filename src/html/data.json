@@ -1,10 +1,19 @@
 {
+  "home": {
+    "name": {
+      "ja": "ホーム",
+      "en": "Home"
+    }
+  },
   "nav": [
     {
       "name": {
         "ja": "サーバ情報",
         "en": "Server"
-      }
+      },
+      "children": [
+
+      ]
     },
     {
       "name": {
@@ -70,7 +79,10 @@
       "name": {
         "ja": "お問い合わせ",
         "en": "Contact"
-      }
+      },
+      "children": [
+        
+      ]
     }
   ]
 }
