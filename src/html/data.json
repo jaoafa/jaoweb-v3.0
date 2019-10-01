@@ -1,3 +1,76 @@
 {
-  
+  "nav": [
+    {
+      "name": {
+        "ja": "サーバ情報",
+        "en": "Server"
+      }
+    },
+    {
+      "name": {
+        "ja": "規則",
+        "en": "Rules"
+      },
+      "children": [
+        {
+          "name": {
+            "ja": "ルール",
+            "en": "Rule"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "ja": "コミュニティ",
+        "en": "Community"
+      },
+      "children": [
+        {
+          "name": {
+            "ja": "Discord",
+            "en": "Discord"
+          }
+        },
+        {
+          "name": {
+            "ja": "jaopedia",
+            "en": "jaopedia"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "ja": "ブログ",
+        "en": "Blog"
+      },
+      "children": [
+        {
+          "name": {
+            "ja": "お知らせ",
+            "en": "Information"
+          }
+        },
+        {
+          "name": {
+            "ja": "お役立ち情報",
+            "en": "Tips"
+          }
+        },
+        {
+          "name": {
+            "ja": "ユーザ投稿",
+            "en": "Users Post"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "ja": "お問い合わせ",
+        "en": "Contact"
+      }
+    }
+  ]
 }
