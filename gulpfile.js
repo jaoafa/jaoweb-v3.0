@@ -101,7 +101,7 @@ const compileEjs = () => {
   return gulp
   .src( paths.html.src.pages )
   .pipe(
-    ejs({ json: json })
+    ejs({ data: json })
   )
   .pipe(
     rename({ extname: ".html" })
