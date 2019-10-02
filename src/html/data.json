@@ -11,9 +11,7 @@
         "ja": "サーバ情報",
         "en": "Server"
       },
-      "children": [
-
-      ]
+      "children": []
     },
     {
       "name": {
@@ -80,9 +78,7 @@
         "ja": "お問い合わせ",
         "en": "Contact"
       },
-      "children": [
-        
-      ]
+      "children": []
     }
   ]
 }
